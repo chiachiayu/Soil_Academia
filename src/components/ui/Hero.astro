@@ -8,12 +8,15 @@ const {fullName, title, institute, profilePicture} = Astro.props
 ---
 <div class='flex-1'>
   <h1 class='text-4xl font-bold mb-4'>
-    Welcome! I'm <span class='text-secondary'>{fullName}</span>
+    <p>Welcome to my website</p>
+    <p>I'm <span class='text-secondary'>{fullName}</span></p>
   </h1>
   <p class='text-xl text-gray-600 mb-4'>{title}{institute ? ` at ${institute}` : ''}</p>
   <p class='text-lg mb-6'>
-    Brief impactful description of your research focus and academic mission.
-    Highlight your key contributions and areas of expertise.
+    I am a postdoctoral researcher in soil science focusing on ultramafic and serpentine soils. 
+    My work integrates soil mineralogy, magnetic susceptibility, and geochemistry (Cr–Ni–Fe systems) to understand how parent material and climate shape pedogenesis. 
+    I also explore enhanced rock weathering (ERW) as a pathway for carbon removal and sustainable agriculture. 
+    My goal is to build a unified framework linking soil evolution, mineral transformation, and global environmental change.
   </p>
   <div class='flex gap-4'>
     <SocialIcons />

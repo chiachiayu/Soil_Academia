@@ -1,16 +1,16 @@
 export const profile = {
-	fullName: 'Your Name',
-	title: '',
-	institute: '',
-	author_name: '', // Author name to be highlighted in the papers section
-	research_areas: [
+	fullName: 'Chia-Yu Yang',
+	title: 'PhD',
+	institute: 'Kyoto Prefectural University',
+	author_name: 'Yang,C.Y.', // Author name to be highlighted in the papers section
+	research_areas: [ { title: 'Pedology', description: 'Soil survey and classification', field: 'Soil science' }
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 	],
 }
 
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
-	email: '',
+	email: 'cyyang@kpu.ac.jp',
 	linkedin: '',
 	x: 'https://www.x.com/',
 	github: '',
@@ -18,7 +18,7 @@ export const social = {
 	scholar: '',
 	inspire: '',
 	arxiv: '',
-	orcid: '',
+	orcid: 'https://orcid.org/0000-0001-8150-2309',
 }
 
 export const template = {

@@ -1,37 +1,20 @@
 ---
-title: "The Discovery of Radium"
-date: "1902-12-26"
-tags: ["Physics", "Research"]
-excerpt: "An account of the discovery of radium and its properties."
+title: "Exploring Basalt Weathering as a Nature-Based Solution for Greenhouse Gas Mitigation in Rice Paddies"
+date: "2025-10-16"
+tags: ["SoilScience", "Research"]
+excerpt: "From basalt to biogeochemistry — decoding the soil’s role in carbon removal."
 ---
 
-# The Discovery of Radium
+Rice cultivation sustains over half of the global population but remains a major anthropogenic source of methane and nitrous oxide. Identifying strategies that can simultaneously maintain crop productivity and mitigate greenhouse gas emissions is therefore essential for climate-resilient agriculture.  
 
-The discovery of radium marked a significant milestone in the field of radioactivity research.
+My current research investigates **enhanced basalt weathering (EBW)** as a potential pathway to achieve this dual objective. By accelerating the dissolution of silicate minerals, basalt amendment can **capture atmospheric CO₂**, **modify soil redox and pH conditions**, and **influence the biogeochemical cycling** of carbon and nitrogen in flooded soils.  
 
-## The Research Process
+Our field experiments in temperate and tropical paddy systems integrate **soil mineralogy, geochemistry, and gas flux measurements** to quantify how basalt weathering alters soil processes and emission dynamics. Through this work, we aim to develop a mechanistic understanding of **how mineral–soil–plant interactions can contribute to long-term greenhouse gas mitigation** while improving soil quality and crop performance.  
 
-In 1898, my husband Pierre and I discovered the element radium. This discovery was the result of years of research and experimentation. Radium is a highly radioactive element with remarkable properties...
+This research represents a step toward uniting **pedology, geochemistry, and climate science** in designing sustainable, nature-based climate solutions grounded in Earth’s own processes.  
 
-### Key Findings
+---
 
-- Radium is highly radioactive
-- It produces luminescence
-- It has potential medical applications
-
-## Experimental Methods
-
-Our research involved:
-
-1. Processing uraninite ore
-2. Chemical separation techniques
-3. Precise measurements of radioactivity
-
-### Technical Challenges
-
-> The processing of pitchblende was a particularly challenging task, requiring tons of raw material to obtain mere decigrams of radium.
-
-Some code we used for calculations:
-`E = mc²`
+> **From basalt to biogeochemistry — decoding the soil’s role in carbon removal.**
 
 You can read more about our research [here](#).

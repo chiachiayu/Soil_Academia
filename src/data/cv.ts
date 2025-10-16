@@ -1,6 +1,6 @@
 export const experiences = [
 	{
-		company: '',
+		company: 'Kyoto Predectrual University',
 		time: '',
 		title: '',
 		location: '',

@@ -12,7 +12,7 @@ export const profile = {
 export const social = {
 	email: 'cyyang@kpu.ac.jp',
 	linkedin: '',
-	x: 'https://www.x.com/',
+	x: 'https://www.x.com/ellencyyang',
 	github: '',
 	gitlab: '',
 	scholar: '',

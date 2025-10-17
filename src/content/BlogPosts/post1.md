@@ -11,7 +11,7 @@ My current research investigates **enhanced basalt weathering (EBW)** as a poten
 
 Our field experiments in temperate and tropical paddy systems integrate **soil mineralogy, geochemistry, and gas flux measurements** to quantify how basalt weathering alters soil processes and emission dynamics. Through this work, we aim to develop a mechanistic understanding of **how mineral–soil–plant interactions can contribute to long-term greenhouse gas mitigation** while improving soil quality and crop performance.  
 
-This research represents a step toward uniting **pedology, geochemistry, and climate science** in designing sustainable, nature-based climate solutions grounded in Earth’s own processes.  
+This research represents a step toward uniting **pedology, geochemistry, and global science** in designing sustainable, nature-based climate solutions grounded in Earth’s own processes.  
 
 ---
 

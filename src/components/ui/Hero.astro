@@ -4,7 +4,7 @@ import { Image } from 'astro:assets'
 import SocialIcons from './SocialIcons.astro'
 
 
-const {fullName, title, institute, profilePicture} = Astro.props
+const {fullName, title, institute, MyPicture} = Astro.props
 ---
 <div class='flex-1'>
   <h1 class='text-4xl font-bold mb-4'>
@@ -12,7 +12,17 @@ const {fullName, title, institute, profilePicture} = Astro.props
     <p>I'm <span class='text-secondary'>{fullName}</span></p>
   </h1>
   <p class='text-xl text-gray-600 mb-4'>{title}{institute ? ` at ${institute}` : ''}</p>
-  <p class='text-lg mb-6'>
+<p class="text-lg mb-6 first-letter:text-5xl first-letter:font-bold first-letter:text-accent first-letter:float-left first-letter:mr-1 first-letter:leading-none">
+  我是一名研究超基性與蛇紋岩土壤的博士後研究員，
+  透過<strong>礦物學、磁化率與地球化學（Cr–Ni–Fe 系統）</strong>探討母岩與氣候對成土作用的影響。
+</p>
+<p class="text-lg mb-6">
+  同時，我也研究以岩石促進風化（ERW）達成碳移除與永續農業的可能性。
+</p>
+<p class="text-lg mb-6">
+  我的<strong>目標</strong>是建立一個連結土壤演化、礦物轉化與全球環境變遷的整合框架。
+</p>
+  <p class='text-base mb-6'></p>    
     I am a postdoctoral researcher in soil science focusing on ultramafic and serpentine soils. 
     My work integrates soil mineralogy, magnetic susceptibility, and geochemistry (Cr–Ni–Fe systems) to understand how parent material and climate shape pedogenesis. 
     I also explore enhanced rock weathering (ERW) as a pathway for carbon removal and sustainable agriculture. 
@@ -22,11 +32,10 @@ const {fullName, title, institute, profilePicture} = Astro.props
     <SocialIcons />
   </div>
 </div>
-<div class='size-72 lg:block hidden'>
-  <!-- Add your profile image -->
+<div class="size-72 lg:block hidden">
   <Image
-    src={profilePicture}
+    src={MyPicture}
     alt={fullName}
-    class='w-full h-full mask mask-circle size-44'
+    class="w-full h-full object-cover mask mask-circle"
   />
 </div>

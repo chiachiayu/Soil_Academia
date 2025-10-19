@@ -61,7 +61,7 @@ export const skills = [
 export const publications = [
 	{
 		title: 'Genesis and mass balance of basaltic soils along a lava plateau chronosequence in Penghu Islands, Taiwan',
-		authors: 'Yang, C.Y., C.Y. Huang,  Z.Y. Hseu',
+		authors: 'Yang,C.Y., C.Y. Huang,  Z.Y. Hseu',
 		journal: 'Journal of Soil Science and Plant Nutrition',
 		time: '2025',
 		link: '',
@@ -69,7 +69,7 @@ export const publications = [
 	},
 	{
 		title: 'Pedogenic fractionation of rare earth elements in chromium- and nickel-enriched ultramafic soils',
-		authors: 'Yang, C.Y., Z.C. Zhang, Z.Y. Hseu',
+		authors: 'Yang,C.Y., Z.C. Zhang, Z.Y. Hseu',
 		journal: 'Catena',
 		time: '2025',
 		link: '',

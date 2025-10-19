@@ -2,7 +2,7 @@ export const profile = {
 	fullName: 'Chia-Yu Yang',
 	title: 'PhD',
 	institute: 'Kyoto Prefectural University',
-	author_name: 'Yang, C.Y.', // Author name to be highlighted in the papers section
+	author_name: 'Yang,C.Y.', // Author name to be highlighted in the papers section
 	research_areas: [ { title: 'Pedology', description: 'Soil survey and classification', field: 'Soil science' }
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 	],

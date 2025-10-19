@@ -61,7 +61,7 @@ export const skills = [
 export const publications = [
 	{
 		title: 'Genesis and mass balance of basaltic soils along a lava plateau chronosequence in Penghu Islands, Taiwan',
-		authors: 'Yang, C.Y., C.Y. Huang,  Z.Y. Hseu',
+		authors: 'Yang,C.Y., C.Y. Huang,  Z.Y. Hseu',
 		journal: 'Journal of Soil Science and Plant Nutrition',
 		time: '2025',
 		link: '',
@@ -69,7 +69,7 @@ export const publications = [
 	},
 	{
 		title: 'Pedogenic fractionation of rare earth elements in chromium- and nickel-enriched ultramafic soils',
-		authors: 'Yang, C.Y., Z.C. Zhang, Z.Y. Hseu',
+		authors: 'Yang,C.Y., Z.C. Zhang, Z.Y. Hseu',
 		journal: 'Catena',
 		time: '2025',
 		link: '',
@@ -77,7 +77,7 @@ export const publications = [
 	},
 	{
 		title: 'How magnetism-based fractional spinels contribute to the bioavailability of geogenic chromium in serpentine soils of Taiwan',
-		authors: 'Yang, C.Y., W.H. Lee, S.L. Wang, Z.Y. Hseu',
+		authors: 'Yang,C.Y., W.H. Lee, S.L. Wang, Z.Y. Hseu',
 		journal: 'Geoderma Regional',
 		time: '2024',
 		link: '',
@@ -85,7 +85,7 @@ export const publications = [
 	},
 	{
 		title: 'Increases in Ca/Mg ratios caused the increases in the mobile fractions of Cr and Ni in serpentinite-derived soils in humid Asia',
-		authors: 'Yang, C.Y., D.Q. Nguyen, H.T.T. Ngo, I.A. Navarrete, A. Nakao, S.T. Huang, Z.Y., Hseu',
+		authors: 'Yang,C.Y., D.Q. Nguyen, H.T.T. Ngo, I.A. Navarrete, A. Nakao, S.T. Huang, Z.Y., Hseu',
 		journal: 'Catena',
 		time: '2022',
 		link: '',
@@ -93,7 +93,7 @@ export const publications = [
 	},
 	{
 		title: 'Kinetics of Chromium Reduction Associated with Varying Characteristics of Agricultural Soils',
-		authors: 'Yang, C.Y., Y.L. Tseng, Z.Y. Hseu',
+		authors: 'Yang,C.Y., Y.L. Tseng, Z.Y. Hseu',
 		journal: 'Water',
 		time: '2022',
 		link: '',

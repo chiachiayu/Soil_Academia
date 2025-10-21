@@ -1,7 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import { soilsurvey } from '../data/soilsurvey'
-import CvTimeline from '@/components/ui/SoilTimeline.astro'
+import SoilTimeline from '@/components/ui/SoilTimeline.astro'
 
 import type { Soilsurvey } from '../types/soilsurvey'
 
@@ -36,7 +36,7 @@ if (soilsurvey.length > 0) {
 				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
 					Soil Collection
 				</h2>
-				<CvTimeline elements={orderedSoilsurvey} colored={true} />
+				<SoilTimeline elements={orderedSoilsurvey} colored={true} />
 			</section>
 		)
 	}

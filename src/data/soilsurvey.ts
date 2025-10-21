@@ -1,16 +1,14 @@
 export const soilsurvey = [
-	{
-		location: '桃園(Taoyuan), Taiwan',
-		time: '2025/04/01',
-		soilclassification: ' Typic Hapludult',
-		description: 'Red soils with Fe-Mn nodules.',
-        image: '/images/Taoyuan_1.jpeg',  // ✅ 圖片路徑image: '/images/soils/KB700-profile.jpg',  // ✅ 圖片路徑
-	},
-	// {
-	// 	company: 'Radium Institute (Institut du Radium)',
-	// 	time: '1914 - 1934',
-	// 	title: 'Director',
-	// 	location: 'Paris, France',
-	// 	description: 'Led groundbreaking studies on radioactivity and mentored future Nobel Prize laureates.',
-	// },
+  {
+    location: '桃園 (Taoyuan), Taiwan',
+    time: '2025/04/01 - 2025/04/02',
+    soilclassification: 'Typic Hapludult',
+    description: 'Tropical humid paddy soils with plinthite.',
+    image: '/images/Taoyuan_1.jpeg',  // ✅ 圖片路徑
+    detail: {
+      subtitle: 'Detailed Soil Profile',
+      text: 'This soil profile showed very coarse Mn nodules between the depth of 50-65 cm. The upper layer exhibited fine platy structure due to periodic wetting and drying.',
+      subimages: ['/images/Taoyuan_2.png', '/images/Taoyuan_3.png'],  // 可選，若要附上細節圖
+    },
+  },
 ];

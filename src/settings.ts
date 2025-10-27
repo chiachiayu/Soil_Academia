@@ -33,7 +33,7 @@ export const template = {
 }
 
 export const seo = {
-	default_title: 'Astro Academia',
-	default_description: 'Astro Academia is a template for academic websites.',
+	default_title: 'Yang Chia-Yu - Academic Portfolio',
+	default_description: 'Yang Chia-Yu\'s academic portfolio showcasing research in soil science and environmental geochemistry.',
 	default_image: '/images/astro-academia.png',
 }

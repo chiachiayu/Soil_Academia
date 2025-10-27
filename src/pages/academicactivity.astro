@@ -1,0 +1,43 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import { activity } from '../data/Academicactivity'
+import AcademicActivityTimeline from '@/components/ui/AcademicActivityTimeline.astro'
+
+import type { Activity } from '../types/academicactivity'
+
+let orderedActivity: Activity[] = []
+
+const orderElement = <T extends { time: string }>(a: T, b: T) => {
+  const presentValues = ['present', 'now', 'current', 'today']
+  if (
+			presentValues.includes(
+				(a['time'] as string)?.split(' - ')[1]?.toLowerCase()
+			)
+		) {
+			// If the date is 'present', it should be the first element
+			return -1
+		}
+		const dateA = new Date((a['time'] as string)?.split(' - ')[1])
+		const dateB = new Date((b['time'] as string)?.split(' - ')[1])
+		return dateB.getTime() - dateA.getTime()
+}
+
+if (activity.length > 0) {
+	orderedActivity = activity.sort((a, b) => {
+		return orderElement(a, b)
+	})
+}
+---
+
+<Layout>
+	{
+		orderedActivity.length > 0 && (
+			<section class='mb-12'>
+				<h2 class='text-2xl font-bold mb-6 border-b pb-2'>
+					Academic Activities
+				</h2>
+				<AcademicActivityTimeline elements={orderedActivity} colored={true} />
+			</section>
+		)
+	}
+</Layout>

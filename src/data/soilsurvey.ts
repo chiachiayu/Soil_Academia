@@ -21,7 +21,7 @@ export const soilsurvey = [
     time: '2017/04/23',
     soilclassification: 'Typic Haplustalfs',
     description: 'Tropical humid basaltic soils.',
-    image: '/images/soilsurvey/Penghu_1.png',  // ✅ 圖片路徑
+    image: '/images/soilsurvey/Penghu_1.jpg',  // ✅ 圖片路徑
     detail: {
       subtitle: 'Detailed Descriptions',
        text: `

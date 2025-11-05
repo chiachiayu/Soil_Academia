@@ -29,7 +29,7 @@ export const soilsurvey = [
 		The upper layer exhibited fine platy structure due to periodic wetting and drying.
 		Fe—Mn nodules reflect clear evidence of soil chemistry; that is,
 		Mn always moved faster than Fe during flooding due to its higher redox potential.`,
-      subimages: ['/images/Penghu_2.jpg', '/images/Penghu_3.tif'],  // 可選，若要附上細節圖
+      subimages: ['/images/soilsurvey/Penghu_2.jpg', '/images/soilsurvey/Penghu_3.tif'],  // 可選，若要附上細節圖
     },
   }
 ];

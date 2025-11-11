@@ -13,8 +13,7 @@ export const activity = [
         highlighting how topography and climate influence the classification and environmental roles of serpentine soils.
         The congress brought together leading scientists to discuss advances in the WRB and Soil Taxonomy systems, followed by field excursions across volcanic and alluvial landscapes. 
         These interactions emphasized soil classification as a shared language linking climate, landscape, and pedogenesis.`,
-      subimages: ['/images/7thISCC/ISCC_group photo_1.JPG', '/images/7thISCC/ISCC_group photo_3.JPG',
-      '/images/7thISCC/ISCC_group photo_4.JPG','/images/7thISCC/ISCC_group photo_5.png'
+      subimages: ['/images/7thISCC/ISCC_group photo_1.JPG', '/images/7thISCC/ISCC_group photo_3.png'
       ],  // 可選，若要附上細節圖
     },
   },

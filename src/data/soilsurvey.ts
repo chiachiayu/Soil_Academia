@@ -1,7 +1,7 @@
 export const soilsurvey = [
   {
     location: '桃園 (Taoyuan), Taiwan',
-    time: '2025/04/01 - 2025/04/02',
+    time: '2025/01/03',
     soilclassification: 'Typic Hapludult',
     description: 'Tropical humid paddy soils with plinthite.',
     image: '/images/Taoyuan_1.jpeg',  // ✅ 圖片路徑

@@ -3,7 +3,9 @@ export const profile = {
 	title: 'PhD',
 	institute: 'Kyoto Prefectural University',
 	author_name: 'Yang,C.Y.', // Author name to be highlighted in the papers section
-	research_areas: [ { title: 'Pedology', description: 'Soil survey and classification', field: 'Soil science' }
+	research_areas: [ { title: 'Pedology', description: 'Soil morphology and classification', field: 'soil chemistry' },
+		{ title: 'Geochemistry', description: 'Elemental fractionation and chemical speciation', field: 'soil chemistry' },
+		{ title: 'Magnetism', description: 'Mineral magnetism and magnetic properties of soils', field: 'soil chemistry' }
 		// { title: 'Physics', description: 'Brief description of the research interest', field: 'physics' },
 	],
 }
@@ -33,7 +35,7 @@ export const template = {
 }
 
 export const seo = {
-	default_title: 'Yang Chia-Yu - Academic Portfolio',
-	default_description: 'Yang Chia-Yu\'s academic portfolio showcasing research in soil science and environmental geochemistry.',
+	default_title: 'Dr. Chia-Yu Yang - Academic Portfolio',
+	default_description: 'Dr. Chia-Yu Yang\'s academic portfolio showcasing research in soil science and environmental geochemistry.',
 	default_image: '/images/astro-academia.png',
 }

@@ -8,15 +8,17 @@ import {RESEARCH_ICONS} from "@/data/researchIcons";
 const { research_areas } = profile;
 ---
 
-<Layout title="Research | Dr. Marie Curie">
+<Layout title="Research | Dr. Chia-Yu Yang" description="Research statement and areas of interest for Dr. Chia-Yu Yang, focusing on soil genesis, environmental geochemistry, and climate science.">
   <div class="prose max-w-none">
     <h1 class="text-3xl font-bold mb-8">Research Statement</h1>
 
     <div class="mb-12">
       <p class="text-lg mb-6">
-        My research bridges soil genesis, environmental geochemistry, and climate science to reveal how mineral weathering and pedogenic transformation regulate the Earth’s carbon cycle. Focusing on ultramafic and basaltic systems, I integrate magnetic, mineralogical, and biogeochemical approaches to decode how soils evolve and interact with the atmosphere. Ultimately, I seek to transform our understanding of soils—from passive records of Earth’s history into active agents of carbon removal and planetary resilience.      </p>
+        My research bridges soil genesis, environmental geochemistry, and climate science to reveal how mineral weathering and pedogenic transformation regulate the Earth’s carbon cycle. 
+        Focusing on ultramafic and basaltic systems, I integrate magnetic, mineralogical, and geochemical approaches to decode how soils evolve and interact with the atmosphere. 
+        Ultimately, I seek to deepen our understanding of soils as dynamic ecosystems that influence and respond to global environmental change.      </p>
       <p class="text-lg mb-6">
-        I study how soils evolve through the interplay of climate, parent material, and time — integrating geochemistry, mineral magnetism, and isotopic tracing to reveal how landscapes archive the Earth’s environmental and geochemical history, from ultramafic terrains to carbon-sequestering systems.
+        I study how soils evolve through the interplay of climate, parent material, and time — integrating geochemistry, mineral magnetism and mineralogy to reveal how landscapes archive the Earth’s environmental and geochemical history, from ultramafic terrains to global ecosystems.
       </p>
     </div>
 
@@ -36,7 +38,7 @@ const { research_areas } = profile;
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d={RESEARCH_ICONS[area.field as keyof typeof RESEARCH_ICONS]?.path || RESEARCH_ICONS['computer-science'].path}
+                  d={RESEARCH_ICONS[area.field as keyof typeof RESEARCH_ICONS]?.path || RESEARCH_ICONS['soil chemistry'].path}
                 />
               </svg>
             </BetterIcon>
@@ -58,6 +60,11 @@ const { research_areas } = profile;
 
     <h2 class="text-2xl font-bold mb-6">Research Impact</h2>
     <p class="text-lg mb-6">
-      My research focuses on the mechanisms of soil formation (pedogenesis) across ultramafic and serpentine landscapes. By integrating mineral magnetism, geochemistry, and isotopic analyses, I uncover how parent material, climate, and time interact to shape soil mineralogy and trace element behavior. This approach not only deepens our understanding of how soils evolve as dynamic geological systems, but also provides a process-based framework for evaluating carbon cycling, metal mobility, and long-term ecosystem development. Through this lens, my work contributes to reinterpreting soils as historical archives of Earth’s surface transformation and as active agents in global environmental change.    </p>
+      My research focuses on the linkage bewtween geochemistry and pedology across ultramafic and serpentine landscapes.
+       By integrating elemental mapping, fractionation and chemical speciation analyses, magnetic analyses, and mineralogical analyses,
+       I uncover how parent material, climate, time, and landscape interact to shape soil mineralogy and element behavior (e.g., Cr, Ni, and rare earth elements). 
+       This comprehensive approach not only deepens our understanding of how soils evolve in dynamic geological systems, 
+       but also provides a theory-based framework for evaluating nutrient cycling, potentially-toxic element mobility, and long-term ecosystem development. 
+     </p>
   </div>
 </Layout>

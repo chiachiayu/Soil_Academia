@@ -36,7 +36,7 @@ export const template = {
 }
 
 export const seo = {
-	default_title: 'Dr. Chia-Yu Yang - Academic Portfolio',
-	default_description: 'Dr. Chia-Yu Yang\'s academic portfolio showcasing research in soil science and environmental geochemistry.',
-	default_image: '/images/astro-academia.png',
+	default_title: 'Chia-Yu Yang - Academic Portfolio',
+	default_description: 'Chia-Yu Yang\'s academic portfolio showcasing research in soil science and environmental geochemistry.',
+	default_image: '/images/webicon.jpg',
 }

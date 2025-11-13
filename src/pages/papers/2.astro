@@ -6,18 +6,13 @@ import { template } from "@/settings";
 
 const ALL_PAPERS = publications;
 
-// 第 1 頁：顯示前 4 篇
+// 第 2 頁：從第 5 篇開始到最後
 const perPage = 4;
-const pageItems = ALL_PAPERS.slice(0, perPage);
+const pageItems = ALL_PAPERS.slice(perPage);
 
-const currentPage = 1;
-const totalPages = Math.ceil(ALL_PAPERS.length / perPage);
-
-// /Soil_Academia/papers 之類
+// URL 基礎路徑
 const basePath = `${template.base}/papers`;
 const page1Url = `${basePath}/`;
-const page2Url = `${basePath}/2/`;
-
 ---
 
 <Layout title="Papers">
@@ -59,22 +54,13 @@ const page2Url = `${basePath}/2/`;
       }
     </div>
 
- <div class="flex justify-center mt-8">
+   <div class="flex justify-center mt-8">
   <div class="join">
-    {/* 第一頁沒有上一頁 */}
-    <button class="join-item btn btn-sm" disabled>«</button>
+    <a href={page1Url} class="join-item btn btn-sm">«</a>
+    <a href={page1Url} class="join-item btn btn-sm">1</a>
+    <button class="join-item btn btn-sm btn-active">2</button>
+    <button class="join-item btn btn-sm" disabled>»</button>
 
-    {/* 目前在第 1 頁，就不要連結 */}
-    <button class="join-item btn btn-sm btn-active">1</button>
-
-    {/* 往第 2 頁：用絕對路徑（含 base） */}
-    <a href={page2Url} class="join-item btn btn-sm">
-      2
-    </a>
-
-    <a href={page2Url} class="join-item btn btn-sm">
-      »
-    </a>
   </div>
 </div>
 

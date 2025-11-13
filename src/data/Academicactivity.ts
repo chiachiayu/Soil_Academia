@@ -45,4 +45,64 @@ export const activity = [
       ],  // 可選，若要附上細節圖
     },
   },
+  {
+    location: '太原市 (Thai Nguyen), Vietnam',
+    time: '2024/03/26 - 2024/03/29',
+    name: 'ESAFS2024',
+    description: '16th The East and Southeast Asia Federation of Soil Science Societies (ESAFS)',
+    image: '/images/esafs2024/esafs2024_home.png',  // ✅ 圖片路徑
+    detail: {
+      subtitle: 'More about the activity',
+       text: `
+		    In March 2024, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) attended the 16th The East and Southeast Asia Federation of Soil Science Societies (ESAFS) in Thai Nguyen, Vietnam.`,
+      subimages: ['/images/esafs2024/esafs2024_2.png', '/images/esafs2024/esafs2024_3.png', '/images/esafs2024/esafs2024_4.png', '/images/esafs2024/esafs2024_5.png'
+      ],  // 可選，若要附上細節圖
+    },
+  },
+  {
+    location: '河內 (Hanoi), Vietnam',
+    time: '2024/03/25',
+    name: 'Joint Seminar in Phenikka University',
+    description: 'Workshop on Soil Health and Sustainable Development',
+    image: '/images/phenikka2024/pu_home.png',  // ✅ 圖片路徑
+    detail: {
+      subtitle: 'More about the activity',
+       text: `
+        In March 2024, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) presented her research, "Modeling for the smart and rapid screening fertility of rural soils from serpentines in Taiwan and Vietnam."
+       `,
+      subimages: ['/images/phenikka2024/pu_1.png', '/images/phenikka2024/pu_2.png', '/images/phenikka2024/pu_3.png', '/images/phenikka2024/pu_4.png'
+      ],  // 可選，若要附上細節圖
+    },
+  },
+  {
+    location: '格拉斯哥 (Glasgow), Scotland UK',
+    time: '2022/07/31 - 2022/08/05',
+    name: 'WCSS22',
+    description: '22nd World Congress of Soil Science',
+    image: '/images/wcss22/wcss22_home.png',  // ✅ 圖片路徑
+    detail: {
+      subtitle: 'More about the activity',
+       text: `
+         In August 2022, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) attended the 22nd World Congress of Soil Science (WCSS22) in Glasgow, Scotland UK.       
+       `,
+      subimages: ['/images/wcss22/wcss22_2.png', '/images/wcss22/wcss22_3.png', '/images/wcss22/wcss22_4.png',  '/images/wcss22/wcss22_5.png'
+      ],  // 可選，若要附上細節圖
+    },
+  },
+   {
+    location: '南錫 (Nancy), France',
+    time: '2023/06/12 - 2023/06/16',
+    name: '10th ICSE',
+    description: '10th International Conference on Serpentine Ecology',
+    image: '/images/icse2023/icse2023_home.png',  // ✅ 圖片路徑
+    detail: {
+      subtitle: 'More about the activity',
+       text: `
+        In June 2023, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) attended the 10th International Conference on Serpentine Ecology (ICSE2023) in Nancy, France.
+        She presented "Characterization of chromium-bearing minerals in incipient and highly-weathered serpentine soil profiles in Taiwan" in the conference.
+       `,
+      subimages: ['/images/icse2023/icse2023_1.png', '/images/icse2023/icse2023_2.png', '/images/icse2023/icse2023_3.png', '/images/icse2023/icse2023_4.png'
+      ],  // 可選，若要附上細節圖
+    },
+  }
 ];

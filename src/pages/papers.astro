@@ -4,7 +4,17 @@ import { publications } from "@/data/cv";
 import { highlightAuthor } from "@/lib/utils";
 import {template} from "@/settings";
 
-const ALL_PAPERS = publications; // This will be replaced with dynamic data later
+const ALL_PAPERS = publications;
+const perPage = 4;       // 每頁顯示幾筆
+const page = Number(Astro.url.searchParams.get("page") || 1);
+
+const start = (page - 1) * perPage;
+const end = start + perPage;
+
+const pageItems = ALL_PAPERS.slice(start, end);
+const totalPages = Math.ceil(ALL_PAPERS.length / perPage);
+const pageParam = Astro.url.searchParams.get("page");
+
 ---
 
 <Layout title="Papers">
@@ -13,7 +23,7 @@ const ALL_PAPERS = publications; // This will be replaced with dynamic data late
 
     <div class="space-y-8">
       {
-        ALL_PAPERS.map((paper) => (
+        pageItems.map((paper) => (
           <div class="card bg-base-200">
             <div class="card-body">
               <h2 class="card-title text-xl">
@@ -28,7 +38,9 @@ const ALL_PAPERS = publications; // This will be replaced with dynamic data late
               <p class="text-sm mb-3">
                 <span class="italic">{paper.journal}</span> • {paper.time}
               </p>
-              <p class="text-sm text-base-content/80">{paper.abstract}</p>
+              <p class="text-sm text-base-content/80">
+               {paper.abstract || "No abstract available."}
+              </p>
               <div class="card-actions justify-end mt-4">
                 <a href={paper.link} class="btn btn-sm btn-secondary text-secondary-content">
                   Read Paper
@@ -40,13 +52,33 @@ const ALL_PAPERS = publications; // This will be replaced with dynamic data late
       }
     </div>
 
-    <div class="flex justify-center mt-8">
+<div class="flex justify-center mt-8">
       <div class="join">
-        <button class="join-item btn btn-sm">«</button>
-        <button class="join-item btn btn-sm">1</button>
-        <button class="join-item btn btn-sm btn-active">2</button>
-        <button class="join-item btn btn-sm">3</button>
-        <button class="join-item btn btn-sm">»</button>
+        {page > 1 && (
+          <a href={`?page=${page - 1}`} class="join-item btn btn-sm">
+            «
+          </a>
+        )}
+
+        {
+          Array.from({ length: totalPages }).map((_, i) => {
+            const pageNumber = i + 1;
+            return (
+              <a
+                href={`?page=${pageNumber}`}
+                class={`join-item btn btn-sm ${pageNumber === page ? "btn-active" : ""}`}
+              >
+                {pageNumber}
+              </a>
+            );
+          })
+        }
+
+        {page < totalPages && (
+          <a href={`?page=${page + 1}`} class="join-item btn btn-sm">
+            »
+          </a>
+        )}
       </div>
     </div>
   </div>

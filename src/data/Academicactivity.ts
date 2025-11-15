@@ -13,8 +13,9 @@ export const activity = [
         highlighting how topography and climate influence the classification and environmental roles of serpentine soils.
         The congress brought together leading scientists to discuss advances in the WRB and Soil Taxonomy systems, followed by field excursions across volcanic and alluvial landscapes. 
         These interactions emphasized soil classification as a shared language linking climate, landscape, and pedogenesis.`,
-      subimages: ['/images/7thISCC/ISCC_group photo_1.JPG', '/images/7thISCC/ISCC_group photo_3.png'
-      ],  // 可選，若要附上細節圖
+      subimages: ['/images/7thISCC/ISCC_group photo_1.JPG', '/images/7thISCC/ISCC_group photo_3.png', '/images/7thISCC/ISCC_group photo_4.png', '/images/7thISCC/ISCC_group photo_5.png', '/images/7thISCC/ISCC_group photo_6.jpg'     
+
+       ],  // 可選，若要附上細節圖
     },
   },
   {
@@ -27,7 +28,7 @@ export const activity = [
       subtitle: 'More about the activity',
        text: `
 		    In June 2025, Dr. Chia-Yu Yang attended the 11th International Conference on Serpentine Ecology (ICSE2025) in Kyoto, Japan.`,
-      subimages: ['/images/icse2025/icse2025_1.png', '/images/icse2025/icse2025_2.png', '/images/icse2025/icse2025_3.png', '/images/icse2025/icse2025_4.png', '/images/icse2025/icse2025_5.png'
+      subimages: ['/images/icse2025/icse2025_1.png', '/images/icse2025/icse2025_2.png', '/images/icse2025/icse2025_3.png', '/images/icse2025/icse2025_4.png', '/images/icse2025/icse2025_5.png', '/images/icse2025/icse2025_6.png'
       ],  // 可選，若要附上細節圖
     },
   },

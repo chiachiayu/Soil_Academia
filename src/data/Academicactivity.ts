@@ -13,15 +13,15 @@ export const activity = [
         highlighting how topography and climate influence the classification and environmental roles of serpentine soils.
         The congress brought together leading scientists to discuss advances in the WRB and Soil Taxonomy systems, followed by field excursions across volcanic and alluvial landscapes. 
         These interactions emphasized soil classification as a shared language linking climate, landscape, and pedogenesis.`,
-      subimages: ['/images/7thISCC/ISCC_group photo_1.JPG', '/images/7thISCC/ISCC_group photo_3.png', '/images/7thISCC/ISCC_group photo_4.png', '/images/7thISCC/ISCC_group photo_5.png', '/images/7thISCC/ISCC_group photo_6.jpg'     
-
+      subimages: ['/images/7thISCC/ISCC_group photo_1.JPG', '/images/7thISCC/ISCC_group photo_3.png', '/images/7thISCC/ISCC_group photo_4.png', '/images/7thISCC/ISCC_group photo_5.png',   
+        '/images/7thISCC/ISCC_group photo_6.jpg','/images/7thISCC/ISCC_group photo_7.tiff'   
        ],  // 可選，若要附上細節圖
     },
   },
   {
     location: '京都 (Kyoto), Japan',
     time: '2025/06/13 - 2025/06/17',
-    name: 'ICSE2025',
+    name: '11th ICSE',
     description: '11th International Conference on Serpentine Ecology',
     image: '/images/icse2025/icse2025_home.png',  // ✅ 圖片路徑
     detail: {

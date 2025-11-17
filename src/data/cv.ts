@@ -1,9 +1,15 @@
 export const experiences = [
 	{
-		company: 'Kyoto Predectrual University',
+		company: 'Kyoto Prefectural University',
 		time: '2025 - Present',
 		title: ' Postdoctoral Researcher',
 		location: 'Kyoto, Japan',
+		description: '',
+	},{
+		company: 'National Taiwan University',
+		time: '2020 - 2021',
+		title: ' Research Assistant',
+		location: 'Taipei, Taiwan',
 		description: '',
 	},
 	// {
@@ -46,11 +52,11 @@ export const skills = [
 	},
 	{
 		title: 'Advanced Soil Analytical Techniques',
-		description: 'Skilled in XANES, XPS, microscopy, and micro-analysis for mineral and Fe-oxide characterization.',
+		description: 'Skilled in XANES, XPS, scanning electron microscopy, and micro-analysis for mineral and Fe-oxide characterization.',
 	},
 	{
 		title: 'Statistics & Data Analysis',
-		description: 'Designing soil data pipelines using correlation tests, regression, and multivariate models (PLSR, PCA, VIP). Skilled in interpreting nonlinear pedogenic relationships and visualizing high-dimensional datasets.',
+		description: 'Exploring relationships between soil properties using correlation tests, regression, and multivariate models (PLSR, PCA, VIP) in R software. Skilled in interpreting nonlinear pedogenic relationships and visualizing high-dimensional datasets.',
 	},
 	// {
 	// 	title: 'Experimental Techniques',
@@ -62,7 +68,7 @@ export const publications = [
 	{
 		title: 'Genesis and mass balance of basaltic soils along a lava plateau chronosequence in Penghu Islands, Taiwan',
 		authors: 'Yang,C.Y., C.Y. Huang,  Z.Y. Hseu',
-		journal: 'Journal of Soil Science and Plant Nutrition',
+		journal: 'Soil Science and Plant Nutrition',
 		time: '2025',
 		link: 'https://doi.org/10.1080/00380768.2025.2547180',
 		abstract: 'Basalt-derived soils are important to global biogeochemical cycles due to their extensive distribution and rapid weathering. The Penghu Islands, located in the Taiwan Strait, provide an ideal setting to investigate the effects of time on pedogenesis within a basaltic chronosequence under humid tropical conditions. Four pedons – PH1, PH2, PH3, and PH4—developed on basaltic lava with stratigraphic ages of 8.5, 9.3, 10.6, and 12 Ma, respectively, were collected. The morphological, physio-chemical, and mineralogical properties of soils were analyzed. A geochemical mass balance approach was conducted to obtain the τj, w value of each element for evaluating the gain and loss of elements. A progressive increase in solum thickness, clay accumulation, and rubification with stratigraphic age were identified, highlighting long-term pedogenic transformations. Younger soils (PH1, PH2), classified as Typic Ustorthents, exhibited minimal horizon development, while older soils (PH3, PH4), classified as Typic Haplustalfs, were characterized by well-developed Bt horizons and high crystallinity of secondary Fe oxides. Mass balance analysis revealed significant elemental depletion, particularly for Si, Al, and Fe, consistent with progressive weathering. However, the τj, w values of Ca and Mg implied net accumulation, suggesting sustained external inputs from marine-derived carbonates and eolian deposition. The τj, w values of trace metals, including Cr and Ni, displayed irregular trends with depth and stratigraphic age, indicating complex interactions between primary mineral dissolution and secondary mineral adsorption. Despite its utility in quantifying element fluxes, mass balance analysis proved inadequate for fully capturing the effect of time on pedogenesis in an open-system environment influenced by external inputs. The lack of a significant correlation between element depletion patterns and plateau age suggested that processes such as eolian deposition, marine carbonate addition, and hydrological influenced variability that cannot be resolved through mass balance alone. This study disentangled in situ weathering from allochthonous contributions, providing a more comprehensive understanding of basaltic soil evolution in dynamic coastal landscapes.',

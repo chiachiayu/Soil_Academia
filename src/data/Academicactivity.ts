@@ -29,7 +29,7 @@ export const activity = [
        text: `
 		    In June 2025, Dr. Chia-Yu Yang attended the 11th International Conference on Serpentine Ecology (ICSE2025) in Kyoto, Japan.`,
       subimages: ['/images/icse2025/icse2025_1.png', '/images/icse2025/icse2025_2.png', '/images/icse2025/icse2025_3.png', '/images/icse2025/icse2025_4.png', 
-      '/images/icse2025/icse2025_5.png', '/images/icse2025/icse2025_7.png',
+      '/images/icse2025/icse2025_5.png',
       ],  // 可選，若要附上細節圖
     },
   },

@@ -14,7 +14,7 @@ export const activity = [
         The congress brought together leading scientists to discuss advances in the WRB and Soil Taxonomy systems, followed by field excursions across volcanic and alluvial landscapes. 
         These interactions emphasized soil classification as a shared language linking climate, landscape, and pedogenesis.`,
       subimages: ['/images/7thISCC/ISCC_group photo_1.JPG', '/images/7thISCC/ISCC_group photo_3.png', '/images/7thISCC/ISCC_group photo_4.png', '/images/7thISCC/ISCC_group photo_5.png',   
-        '/images/7thISCC/ISCC_group photo_6.jpg','/images/7thISCC/ISCC_group photo_7.tiff'   
+        '/images/7thISCC/ISCC_group photo_6.jpg',   
        ],  // 可選，若要附上細節圖
     },
   },
@@ -29,7 +29,7 @@ export const activity = [
        text: `
 		    In June 2025, Dr. Chia-Yu Yang attended the 11th International Conference on Serpentine Ecology (ICSE2025) in Kyoto, Japan.`,
       subimages: ['/images/icse2025/icse2025_1.png', '/images/icse2025/icse2025_2.png', '/images/icse2025/icse2025_3.png', '/images/icse2025/icse2025_4.png', 
-      '/images/icse2025/icse2025_5.png', '/images/icse2025/icse2025_6.png', '/images/icse2025/icse2025_7.png', '/images/icse2025/icse2025_8.png'
+      '/images/icse2025/icse2025_5.png', '/images/icse2025/icse2025_7.png',
       ],  // 可選，若要附上細節圖
     },
   },
@@ -87,7 +87,7 @@ export const activity = [
        text: `
          In August 2022, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) attended the 22nd World Congress of Soil Science (WCSS22) in Glasgow, Scotland UK.       
        `,
-      subimages: ['/images/wcss22/wcss22_2.png', '/images/wcss22/wcss22_3.png', '/images/wcss22/wcss22_4.png',  '/images/wcss22/wcss22_5.png'
+      subimages: ['/images/wcss22/wcss22_2.png', '/images/wcss22/wcss22_3.png', '/images/wcss22/wcss22_5.png'
       ],  // 可選，若要附上細節圖
     },
   },
@@ -103,7 +103,7 @@ export const activity = [
         In June 2023, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) attended the 10th International Conference on Serpentine Ecology (ICSE2023) in Nancy, France.
         She presented "Characterization of chromium-bearing minerals in incipient and highly-weathered serpentine soil profiles in Taiwan" in the conference.
        `,
-      subimages: ['/images/icse2023/icse2023_1.png', '/images/icse2023/icse2023_2.png', '/images/icse2023/icse2023_3.png', '/images/icse2023/icse2023_4.png'
+      subimages: ['/images/icse2023/icse2023_1.png', '/images/icse2023/icse2023_2.png',
       ],  // 可選，若要附上細節圖
     },
   }

@@ -57,7 +57,7 @@ export const activity = [
       subtitle: 'More about the activity',
        text: `
 		    In March 2024, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) attended the 16th The East and Southeast Asia Federation of Soil Science Societies (ESAFS) in Thai Nguyen, Vietnam.`,
-      subimages: ['/images/esafs2024/esafs2024_2.png', '/images/esafs2024/esafs2024_3.png', '/images/esafs2024/esafs2024_4.png', '/images/esafs2024/esafs2024_5.png'
+      subimages: ['/images/esafs2024/esafs2024_2.png', '/images/esafs2024/esafs2024_3.png', '/images/esafs2024/esafs2024_5.png'
       ],  // 可選，若要附上細節圖
     },
   },
@@ -66,13 +66,13 @@ export const activity = [
     time: '2024/03/25',
     name: 'Joint Seminar in Phenikka University',
     description: 'Workshop on Soil Health and Sustainable Development',
-    image: '/images/phenikka2024/pu_home.png',  // ✅ 圖片路徑
+    image: '/images/phenikka2024/pu_1.png',  // ✅ 圖片路徑
     detail: {
       subtitle: 'More about the activity',
        text: `
         In March 2024, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) presented her research, "Modeling for the smart and rapid screening fertility of rural soils from serpentines in Taiwan and Vietnam."
        `,
-      subimages: ['/images/phenikka2024/pu_1.png', '/images/phenikka2024/pu_2.png', '/images/phenikka2024/pu_3.png', '/images/phenikka2024/pu_4.png'
+      subimages: ['/images/phenikka2024/pu_2.png', '/images/phenikka2024/pu_3.png', '/images/phenikka2024/pu_4.png'
       ],  // 可選，若要附上細節圖
     },
   },

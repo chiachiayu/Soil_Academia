@@ -1,6 +1,6 @@
 ---
-title: "研究日誌｜玄武岩施用後的溫室氣體變化：一次重新整理（2025 冬）
- (Research Notes | Greenhouse Gas Changes After Basalt Amendment (Winter 2025))"
+title: "研究日誌｜玄武岩施用後的溫室氣體變化（2025 冬）
+ (Research Notes | Winter 2025)"
 date: "2025-11-26"
 tags: ["SoilScience", "EnhancedRockWeathering", "PaddyField"]
 excerpt: "玄武岩施用後的排放下降是真實且穩定的，但是土壤的 pH、Eh、含水量與溫度不足以解釋下降機制。"

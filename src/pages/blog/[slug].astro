@@ -1,34 +1,38 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import {template} from '@/settings'
-import {getCollection, render} from 'astro:content'
+import { template } from '@/settings'
+import { getCollection, render } from 'astro:content'
 
 export async function getStaticPaths(): Promise<Array<{ params: { slug: string }, props: { post: any } }>> {
-    const blogEntries = await getCollection("blog");
+	// 讀取 blog collection 的所有文章
+	const blogEntries = await getCollection('blog')
 
-    const posts = blogEntries
-        .map(post => {
-        const slug = post.id
-            return {
-            params: { slug },
-            props: { post },
-            }
-    })
-    return posts
+	// 逐篇文章建立對應的 slug 路徑與 props
+	const posts = blogEntries.map(post => {
+		const slug = post.id
+		return {
+			params: { slug },
+			props: { post },
+		}
+	})
+	// 回傳靜態路由設定
+	return posts
 }
-const {post} = Astro.props;
-const { title, date, tags} = post.data; 
-const { Content } = await render(post);
+const { post } = Astro.props
+const { title, date, tags } = post.data
+// 將 Markdown 內容渲染成可用的 Astro component
+const { Content } = await render(post)
 ---
 
 <Layout title={title}>
-	<div class='mx-auto max-w-3xl lg:max-w-4xl px-6 lg:px-0'>
+	{/* 外層容器：拉寬整頁內容區，避免內文被限制在小寬度 */}
+	<div class='mx-auto w-full max-w-3xl px-6 lg:max-w-4xl lg:px-0'>
 		<article
-			class='prose max-w-none text-left prose-headings:text-base-content prose-p:text-base-content/80'
+			class='prose max-w-none w-full text-left prose-headings:text-base-content prose-p:text-base-content/80'
 		>
 			<!-- Header section -->
 			<div class='mb-8 border-b pb-8'>
-				<h1 class='text-4xl font-bold mb-4 text-base-content'>{title}</h1>
+				<h1 class='text-4xl font-bold mb-4 text-base-content break-words'>{title}</h1>
 				<div class='flex flex-wrap items-center gap-4 text-base-content/70'>
 					<!-- Date -->
 					<time datetime={date} class='flex items-center'>
@@ -69,10 +73,11 @@ const { Content } = await render(post);
 			</div>
 
 			<!-- Post content -->
+			<!-- 主要內文：覆寫 typography 預設寬度、字級與排版 -->
 			<div
-				class='prose mt-8 prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-4
+				class='prose max-w-3xl mt-8 prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-4
          prose-h3:text-xl prose-h3:font-semibold prose-h3:mb-3
-         prose-p:mb-4 prose-p:leading-relaxed
+         prose-p:mb-4 prose-p:leading-relaxed prose-p:text-justify
          prose-strong:text-base-content prose-strong:font-bold
          prose-em:italic
          prose-a:text-accent prose-a:no-underline hover:prose-a:underline
@@ -81,7 +86,8 @@ const { Content } = await render(post);
          prose-ul:list-disc prose-ul:pl-6
          prose-ol:list-decimal prose-ol:pl-6
          prose-li:mb-2
-         prose-img:rounded-lg prose-img:my-8'
+         prose-img:rounded-lg prose-img:my-8 prose-img:mx-auto
+         prose-figcaption:text-center'
         >
                 <Content />
 			</div>

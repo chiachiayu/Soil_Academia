@@ -37,7 +37,7 @@ export const activity = [
     location: 'Niigata, Japan',
     time: '2025/09/17 - 2025/09/19',
     name: 'JSSSPN2025',
-    description: '日本土壌肥料学会2025年度新潟大会',
+    description: 'Annual Meeting of the Japanese Society of Soil Science and Plant Nutrition 2025 in Niigata',
     image: '/images/jssspn2025/jssspn2025_2.jpg',  // ✅ 圖片路徑
     detail: {
       subtitle: 'More about the activity',

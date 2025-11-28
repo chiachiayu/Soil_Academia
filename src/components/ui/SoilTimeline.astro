@@ -7,15 +7,22 @@ interface Props {
 	colored: boolean
 }
 
-const { elements, colored } = Astro.props
+const { elements, colored } = Astro.props;
+
+// 依時間從新到舊排序（假設 element.time 是可以被 Date() 解析的字串，如 "2025-11-01" 或 "2025-11"）
+const sortedElements = [...elements].sort((a, b) => {
+  const ta = new Date(a.time).getTime();
+  const tb = new Date(b.time).getTime();
+  return tb - ta; // 新的（時間比較大）排在前面
+});
 ---
 
 <ul
-	class='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical'
+  class='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical'
 >
-	{
-		elements.map((element, index) => (
-			<li>
+  {
+    sortedElements.map((element, index) => (
+      <li>
 				<div class='timeline-middle'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'

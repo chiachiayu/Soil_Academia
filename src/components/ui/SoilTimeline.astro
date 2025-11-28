@@ -9,11 +9,26 @@ interface Props {
 
 const { elements, colored } = Astro.props;
 
-// 依時間從新到舊排序（假設 element.time 是可以被 Date() 解析的字串，如 "2025-11-01" 或 "2025-11"）
+const presentValues = ['present', 'now', 'current', 'today'];
+
+// 以時間從新到舊排序，並處理日期範圍/斜線/「present」等情況
+const parseTimeToNumber = (time: string) => {
+  if (!time) return 0;
+
+  // 使用「 - 」作為範圍切割，取結束日期；若沒有則取單一日期
+  const normalized = time.replace(/\u2013|\u2014/g, '-'); // 將長破折號轉成 -
+  const [, end = normalized] = normalized.split(' - ').map((v) => v.trim());
+
+  if (presentValues.includes(end.toLowerCase())) {
+    return Number.POSITIVE_INFINITY; // 現在進行中的放最前
+  }
+
+  const parsed = Date.parse(end.replace(/\//g, '-')); // 支援 yyyy/mm/dd
+  return Number.isNaN(parsed) ? 0 : parsed;
+};
+
 const sortedElements = [...elements].sort((a, b) => {
-  const ta = new Date(a.time).getTime();
-  const tb = new Date(b.time).getTime();
-  return tb - ta; // 新的（時間比較大）排在前面
+  return parseTimeToNumber(b.time) - parseTimeToNumber(a.time);
 });
 ---
 

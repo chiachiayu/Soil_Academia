@@ -1,7 +1,7 @@
 export const soilsurvey = [
   {
     location: 'Taoyuan, Taiwan',
-    time: '2025/01/03',
+    time: '2025-01-03',
     soilclassification: 'Typic Hapludults',
     description: 'Tropical humid paddy soils with plinthite.',
     image: '/images/soilsurvey/Taoyuan/Taoyuan_1.jpeg',  // ✅ 圖片路徑
@@ -18,7 +18,7 @@ export const soilsurvey = [
 
     {
     location: 'Penghu, Taiwan',
-    time: '2017/04/23',
+    time: '2017-04-23',
     soilclassification: 'Typic Haplustalfs',
     description: 'Tropical humid basaltic soils.',
     image: '/images/soilsurvey/Penghu/Penghu_1.png',  // ✅ 圖片路徑  
@@ -26,7 +26,7 @@ export const soilsurvey = [
 
     {
     location: 'Hokkaido, Japan',
-    time: '2024/06/06 - 2024/06/08',
+    time: '2024-06-06 - 2024-06-08',
     soilclassification: 'Hapludands',
     description: 'Temperate humid volcanic soils.',
     image: '/images/soilsurvey/Hokkaido/Hokkaido_pedon01.tiff',  // ✅ 圖片路徑
@@ -35,7 +35,7 @@ export const soilsurvey = [
 
     {
     location: 'Hokkaido, Japan',
-    time: '2024/06/06 - 2024/06/08',
+    time: '2024-06-06 - 2024-06-08',
     soilclassification: 'Udifluvents',
     description: 'Temperate humid alluvial soils.',
     image: '/images/soilsurvey/Hokkaido/Hokkaido_pedon02.tiff',  // ✅ 圖片路徑
@@ -59,7 +59,7 @@ export const soilsurvey = [
 
     {
     location: 'Hokkaido, Japan',
-    time: '2024/06/06 - 2024/06/08',
+    time: '2024-06-06 - 2024-06-08',
     soilclassification: 'Udifluvents',
     description: 'Temperate alluvial/colluvial soils (grape garden).',
     image: '/images/soilsurvey/Hokkaido/Hokkaido_pedon04.tiff',  // ✅ 圖片路徑
@@ -67,7 +67,7 @@ export const soilsurvey = [
 
     {
     location: 'Hokkaido, Japan',
-    time: '2024/06/06 - 2024/06/08',
+    time: '2024-06-06 - 2024-06-08',
     soilclassification: 'Hapludands',
     description: 'Temperate humid volcanic soils (grape garden).',
     image: '/images/soilsurvey/Hokkaido/Hokkaido_pedon05.tiff',  // ✅ 圖片路徑
@@ -75,7 +75,7 @@ export const soilsurvey = [
 
     {
     location: 'Hokkaido, Japan',
-    time: '2024/06/06 - 2024/06/08',
+    time: '2024-06-06 - 2024-06-08',
     soilclassification: 'Hapludands',
     description: 'Temperate humid volcanic soils (chinese yam).',
     image: '/images/soilsurvey/Hokkaido/Hokkaido_pedon06.tiff',  // ✅ 圖片路徑
@@ -83,7 +83,7 @@ export const soilsurvey = [
 
     {
     location: 'Hokkaido, Japan',
-    time: '2024/06/06 - 2024/06/08',
+    time: '2024-06-06 - 2024-06-08',
     soilclassification: 'Udorthents',
     description: 'Temperate humid forest soils with well drainage.',
     image: '/images/soilsurvey/Hokkaido/Hokkaido_pedon07.tiff',  // ✅ 圖片路徑
@@ -91,7 +91,7 @@ export const soilsurvey = [
 
     {
     location: 'Hokkaido, Japan',
-    time: '2024/06/06 - 2024/06/08',
+    time: '2024-06-06 - 2024-06-08',
     soilclassification: 'Humaquepts',
     description: 'Temperate humid forest soils with poor drainage.',
     image: '/images/soilsurvey/Hokkaido/Hokkaido_pedon08.tiff',  // ✅ 圖片路徑
@@ -105,7 +105,7 @@ export const soilsurvey = [
 
     {
     location: 'Hokkaido, Japan',
-    time: '2024/06/06 - 2024/06/08',
+    time: '2024-06-06 - 2024-06-08',
     soilclassification: 'Hydraquents',
     description: 'Temperate humid paddy soils.',
     image: '/images/soilsurvey/Hokkaido/Hokkaido_pedon09.tiff',  // ✅ 圖片路徑

@@ -1,6 +1,6 @@
 export const activity = [
   {
-    location: '北海道 (Hokkaido), Japan',
+    location: 'Hokkaido, Japan',
     time: '2025/06/03 - 2025/06/09',
     name: '7th ISCC',
     description: '7th International Soil Classification Congress',
@@ -19,7 +19,7 @@ export const activity = [
     },
   },
   {
-    location: '京都 (Kyoto), Japan',
+    location: 'Kyoto, Japan',
     time: '2025/06/13 - 2025/06/17',
     name: '11th ICSE',
     description: '11th International Conference on Serpentine Ecology',
@@ -34,7 +34,7 @@ export const activity = [
     },
   },
   {
-    location: '新潟 (Niigata), Japan',
+    location: 'Niigata, Japan',
     time: '2025/09/17 - 2025/09/19',
     name: 'JSSSPN2025',
     description: '日本土壌肥料学会2025年度新潟大会',
@@ -48,7 +48,7 @@ export const activity = [
     },
   },
   {
-    location: '太原市 (Thai Nguyen), Vietnam',
+    location: 'Thai Nguyen, Vietnam',
     time: '2024/03/26 - 2024/03/29',
     name: 'ESAFS2024',
     description: '16th The East and Southeast Asia Federation of Soil Science Societies (ESAFS)',
@@ -62,7 +62,7 @@ export const activity = [
     },
   },
   {
-    location: '河內 (Hanoi), Vietnam',
+    location: 'Hanoi, Vietnam',
     time: '2024/03/25',
     name: 'Joint Seminar in Phenikka University',
     description: 'Workshop on Soil Health and Sustainable Development',
@@ -77,7 +77,7 @@ export const activity = [
     },
   },
   {
-    location: '格拉斯哥 (Glasgow), Scotland UK',
+    location: 'Glasgow, Scotland UK',
     time: '2022/07/31 - 2022/08/05',
     name: 'WCSS22',
     description: '22nd World Congress of Soil Science',
@@ -92,7 +92,7 @@ export const activity = [
     },
   },
    {
-    location: '南錫 (Nancy), France',
+    location: 'Nancy, France',
     time: '2023/06/12 - 2023/06/16',
     name: '10th ICSE',
     description: '10th International Conference on Serpentine Ecology',

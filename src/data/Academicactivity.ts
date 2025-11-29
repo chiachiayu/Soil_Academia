@@ -8,7 +8,7 @@ export const activity = [
     detail: {
       subtitle: 'More about the activity',
        text: `
-		    In June 2024, Dr. Chia-Yu Yang (then a Ph.D. candidate at National Taiwan University) participated in the 7th International Soil Classification Congress (ISCC) held in Hokkaido, Japan.
+		    In June 2024, Chia-Yu Yang participated in the 7th International Soil Classification Congress (ISCC) held in Hokkaido, Japan.
         She presented her research, “Classification of Serpentine Soils in Soil Taxonomy and Application for Sustainability,” 
         highlighting how topography and climate influence the classification and environmental roles of serpentine soils.
         The congress brought together leading scientists to discuss advances in the WRB and Soil Taxonomy systems, followed by field excursions across volcanic and alluvial landscapes. 

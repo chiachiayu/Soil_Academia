@@ -7,7 +7,8 @@ excerpt: " The transition collapsed not because organic farming is flawed, but b
 
 <figure>
   <img src="/images/blog/4.png" alt="" class="mx-auto max-w-xl rounded-lg" />
-  <figcaption>Sri Lanka local farmers helped to collect soil samples from the paddy field. Photo credit to soil science lab in Kyoto Prefectural University.</figcaption>
+  <figcaption>Local farmers in Sri Lanka worked with us to collect soil samples from the paddy fields. Photo credit: Soil Science Laboratory, Kyoto Prefectural University.
+  </figcaption>
 </figure>
 
 
@@ -27,7 +28,7 @@ https://www.eu-asean.eu/wp-content/uploads/2022/10/Sri-Lanka-Impact-Assessment-S
 
 <figure>
   <img src="/images/blog/5.JPG" alt="" class="mx-auto max-w-xl rounded-lg" />
-  <figcaption>Dry-out field land in Sri Lanka. Photo credit to soil science lab in Kyoto Prefectural University.</figcaption>
+  <figcaption>A dried-out field in Sri Lanka. Photo credit: Soil Science Laboratory, Kyoto Prefectural University.</figcaption>
 </figure>
 
 ⸻
@@ -52,7 +53,8 @@ Agricultural transition is not simply a matter of switching fertilizer brands or
 
 <figure>
   <img src="/images/blog/6.JPG" alt="" class="mx-auto max-w-xl rounded-lg" />
-  <figcaption>Tropical paddy field landscape and surrounding vegetations. Photo credit to soil science lab in Kyoto Prefectural University.</figcaption>
+  <figcaption>A tropical paddy field landscape and its surrounding vegetation. Photo credit: Soil Science Laboratory, Kyoto Prefectural University.
+  </figcaption>
 </figure>
 
 ---

@@ -27,7 +27,7 @@ export const activity = [
     detail: {
       subtitle: 'More about the activity',
        text: `
-		    In June 2025, Dr. Chia-Yu Yang attended the 11th International Conference on Serpentine Ecology (ICSE2025) in Kyoto, Japan.`,
+		    In June 2025, Chia-Yu Yang attended the 11th International Conference on Serpentine Ecology (ICSE2025) in Kyoto, Japan.`,
       subimages: ['/images/icse2025/icse2025_1.png', '/images/icse2025/icse2025_2.png', '/images/icse2025/icse2025_4.png', 
       '/images/icse2025/icse2025_5.png',
       ],  // 可選，若要附上細節圖
@@ -42,7 +42,7 @@ export const activity = [
     detail: {
       subtitle: 'More about the activity',
        text: `
-		    In September 2025, Dr. Chia-Yu Yang attended the 2025 Annual Meeting of the Japanese Society of Soil Science and Plant Nutrition (JSSSPN2025) in Niigata, Japan.`,
+		    In September 2025, Chia-Yu Yang attended the 2025 Annual Meeting of the Japanese Society of Soil Science and Plant Nutrition (JSSSPN2025) in Niigata, Japan.`,
       subimages: ['/images/jssspn2025/jssspn2025_1.jpg', '/images/jssspn2025/jssspn2025_home.png', '/images/jssspn2025/jssspn2025_3.png', '/images/jssspn2025/jssspn2025_4.png', '/images/jssspn2025/jssspn2025_5.png'
       ],  // 可選，若要附上細節圖
     },
@@ -56,7 +56,7 @@ export const activity = [
     detail: {
       subtitle: 'More about the activity',
        text: `
-		    In March 2024, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) attended the 16th The East and Southeast Asia Federation of Soil Science Societies (ESAFS) in Thai Nguyen, Vietnam.`,
+		    In March 2024, Chia-Yu Yang attended the 16th The East and Southeast Asia Federation of Soil Science Societies (ESAFS) in Thai Nguyen, Vietnam.`,
       subimages: ['/images/esafs2024/esafs2024_home.png', '/images/esafs2024/esafs2024_3.png', '/images/esafs2024/esafs2024_5.png'
       ],  // 可選，若要附上細節圖
     },
@@ -70,7 +70,7 @@ export const activity = [
     detail: {
       subtitle: 'More about the activity',
        text: `
-        In March 2024, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) presented her research, "Modeling for the smart and rapid screening fertility of rural soils from serpentines in Taiwan and Vietnam."
+        In March 2024, Chia-Yu Yang presented her research, "Modeling for the smart and rapid screening fertility of rural soils from serpentines in Taiwan and Vietnam."
        `,
       subimages: ['/images/phenikka2024/pu_2.png', '/images/phenikka2024/pu_3.png', '/images/phenikka2024/pu_4.png'
       ],  // 可選，若要附上細節圖
@@ -85,7 +85,7 @@ export const activity = [
     detail: {
       subtitle: 'More about the activity',
        text: `
-         In August 2022, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) attended the 22nd World Congress of Soil Science (WCSS22) to present her poster in Glasgow, Scotland UK.       
+         In August 2022, Chia-Yu Yang attended the 22nd World Congress of Soil Science (WCSS22) to present her poster in Glasgow, Scotland UK.       
        `,
       subimages: ['/images/wcss22/wcss22_1.png', '/images/wcss22/wcss22_2.png', '/images/wcss22/wcss22_3.png', '/images/wcss22/wcss22_4.png'
       ],  // 可選，若要附上細節圖
@@ -100,7 +100,7 @@ export const activity = [
     detail: {
       subtitle: 'More about the activity',
        text: `
-        In June 2023, Dr. Chia-Yu Yang (then a Ph.D. student at National Taiwan University) attended the 10th International Conference on Serpentine Ecology (ICSE2023) in Nancy, France.
+        In June 2023, Chia-Yu Yang attended the 10th International Conference on Serpentine Ecology (ICSE2023) in Nancy, France.
         She presented "Characterization of chromium-bearing minerals in incipient and highly-weathered serpentine soil profiles in Taiwan" in the conference.
        `,
       subimages: ['/images/icse2023/icse2023_1.png', '/images/icse2023/icse2023_2.png', '/images/icse2023/icse2023_3.png', '/images/icse2023/icse2023_4.png'

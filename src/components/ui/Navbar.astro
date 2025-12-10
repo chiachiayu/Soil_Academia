@@ -6,7 +6,28 @@ import MyIcon from '@/assets/Me.jpeg'
 import { getCollection } from 'astro:content'
 import { template } from '@/settings'
 
-const isBlogPopulated = await getCollection('blog').then(collection => collection.length > 0)
+const blogCollection = await getCollection('blog')
+const isBlogPopulated = blogCollection.length > 0
+const hasRecentBlogPost = (() => {
+	const now = new Date()
+	const recentThresholdMs = 7 * 24 * 60 * 60 * 1000
+
+	// Find the most recent published post (ignoring invalid or future dates).
+	const latestPublished = blogCollection.reduce<Date | null>((latest, { data }) => {
+		const published = new Date(data.date)
+		const isValid = !Number.isNaN(published.getTime())
+		const isInPast = published.getTime() <= now.getTime()
+
+		if (!isValid || !isInPast) return latest
+		if (!latest || published.getTime() > latest.getTime()) return published
+		return latest
+	}, null)
+
+	if (!latestPublished) return false
+
+	const timeSinceLatest = now.getTime() - latestPublished.getTime()
+	return timeSinceLatest <= recentThresholdMs
+})()
 
 const {fullName, title_name} = profile
 ---
@@ -45,12 +66,19 @@ const {fullName, title_name} = profile
 					<li>
                         <a href={`${template.base}/academicactivity`} class='text-lg'>Academic Activity</a>
                     </li>
-                    {isBlogPopulated &&
+					{isBlogPopulated && (
 					<li>
-                        <a href={`${template.base}/blog/1`} class='text-lg'>Blog</a>
-</li>
-                    }
-				</ul>
+						<a href={`${template.base}/blog/1`} class='text-lg flex items-center justify-between'>
+							<span>Blog</span>
+							{hasRecentBlogPost && (
+								<span class="ml-2 px-2 py-0.5 text-xs bg-red-500 text-white rounded-full animate-pulse">
+									NEW
+								</span>
+							)}
+						</a>
+					</li>
+					)}
+			</ul>
 			</div>
 		</div>
 		<div class='mx-4'>

@@ -14,7 +14,7 @@ export const profile = {
 // Set equal to an empty string to hide the icon that you don't want to display
 export const social = {
 	email: 'cyyang@kpu.ac.jp',
-	linkedin: 'www.linkedin.com/in/chia-yu-yang-714626241',
+	linkedin: 'https://www.linkedin.com/in/chia-yu-yang-tw/',
 	x: 'https://www.x.com/ellencyyang',
 	github: '',
 	gitlab: '',

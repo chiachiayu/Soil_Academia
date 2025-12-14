@@ -106,5 +106,21 @@ export const activity = [
       subimages: ['/images/icse2023/icse2023_1.png', '/images/icse2023/icse2023_2.png', '/images/icse2023/icse2023_3.png', '/images/icse2023/icse2023_4.png'
       ],  // 可選，若要附上細節圖
     },
+  },
+    {
+    location: 'Shimane, Japan',
+    time: '2025/12/11 - 2025/12/12',
+    name: 'Simane Conference',
+    description: 'Kansai Branch Annual Meeting of the Japanese Society of Soil Science and Plant Nutrition',
+    image: '/images/shimane2025/1.png',  // ✅ 圖片路徑
+    detail: {
+      subtitle: 'More about the activity',
+       text: `
+        In December 2025, Chia-Yu Yang attended the Kansai Branch Annual Meeting of the Japanese Society of Soil Science and Plant Nutrition in Shimane, Japan.
+        She presented "Exploring Basalt Weathering for Mitigating Greenhouse Gas Emissions in Rice Paddy System" in the conference.
+       `,
+      subimages: ['/images/shimane2025/2.png', '/images/shimane2025/3.png', '/images/shimane2025/4.png'
+      ],  // 可選，若要附上細節圖
+    },
   }
 ];

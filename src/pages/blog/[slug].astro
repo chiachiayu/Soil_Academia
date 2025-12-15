@@ -86,11 +86,37 @@ const { Content } = await render(post)
          prose-ul:list-disc prose-ul:pl-6
          prose-ol:list-decimal prose-ol:pl-6
          prose-li:mb-2
-         prose-img:rounded-lg prose-img:my-8 prose-img:mx-auto
-         prose-figcaption:text-center'
+         prose-img:rounded-xl prose-img:my-8 prose-img:mx-auto prose-img:w-full
+         prose-figcaption:text-center blog-content'
         >
                 <Content />
 			</div>
 		</article>
 	</div>
 </Layout>
+
+<style>
+	.blog-content :where(img) {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		display: block;
+		object-fit: contain;
+	}
+
+	.blog-content :where(figure) {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	@media (max-width: 640px) {
+		.blog-content {
+			padding-inline: 0.25rem;
+		}
+
+		.blog-content :where(img) {
+			border-radius: 0.9rem;
+		}
+	}
+</style>

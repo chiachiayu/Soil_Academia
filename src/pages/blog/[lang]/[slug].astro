@@ -1,41 +1,28 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import { template } from '@/settings'
 import { getCollection, render } from 'astro:content'
 
-export async function getStaticPaths(): Promise<Array<{ params: { slug: string }, props: { post: any } }>> {
-	// 讀取 blog collection 的所有文章
+export async function getStaticPaths() {
 	const blogEntries = await getCollection('blog')
 
-	// 逐篇文章建立對應的 slug 路徑與 props
-	const posts = blogEntries.map(post => {
-		const slug = post.id
-		return {
-			params: { slug },
-			props: { post },
-		}
-	})
-	// 回傳靜態路由設定
-	return posts
+	return blogEntries.map(post => ({
+		params: { lang: post.id.split('/')[0], slug: post.id.split('/')[1] },
+		props: { post },
+	}))
 }
+
 const { post } = Astro.props
-const { title, date, tags } = post.data
-// 將 Markdown 內容渲染成可用的 Astro component
+const { title, publishedAt, tags } = post.data
 const { Content } = await render(post)
 ---
 
 <Layout title={title}>
-	{/* 外層容器：拉寬整頁內容區，避免內文被限制在小寬度 */}
 	<div class='mx-auto w-full max-w-3xl px-6 lg:max-w-4xl lg:px-0'>
-		<article
-			class='prose max-w-none w-full text-left prose-headings:text-base-content prose-p:text-base-content/80'
-		>
-			<!-- Header section -->
+		<article class='prose max-w-none w-full text-left prose-headings:text-base-content prose-p:text-base-content/80'>
 			<div class='mb-8 border-b pb-8'>
 				<h1 class='text-4xl font-bold mb-4 text-base-content break-words'>{title}</h1>
 				<div class='flex flex-wrap items-center gap-4 text-base-content/70'>
-					<!-- Date -->
-					<time datetime={date} class='flex items-center'>
+					<time datetime={publishedAt} class='flex items-center'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							class='h-4 w-4 mr-2'
@@ -51,7 +38,7 @@ const { Content } = await render(post)
 							></path>
 						</svg>
 						{
-							new Date(date).toLocaleDateString('en-US', {
+							new Date(publishedAt).toLocaleDateString('en-US', {
 								year: 'numeric',
 								month: 'long',
 								day: 'numeric',
@@ -59,7 +46,6 @@ const { Content } = await render(post)
 						}
 					</time>
 
-					<!-- Tags -->
 					{
 						tags && (
 							<div class='flex flex-wrap gap-2'>
@@ -72,8 +58,6 @@ const { Content } = await render(post)
 				</div>
 			</div>
 
-			<!-- Post content -->
-			<!-- 主要內文：覆寫 typography 預設寬度、字級與排版 -->
 			<div
 				class='prose max-w-3xl mt-8 prose-h2:text-2xl prose-h2:font-bold prose-h2:mb-4
          prose-h3:text-xl prose-h3:font-semibold prose-h3:mb-3
@@ -88,8 +72,8 @@ const { Content } = await render(post)
          prose-li:mb-2
          prose-img:rounded-xl prose-img:my-8 prose-img:mx-auto prose-img:w-full
          prose-figcaption:text-center blog-content'
-        >
-                <Content />
+			>
+				<Content />
 			</div>
 		</article>
 	</div>

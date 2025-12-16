@@ -9,7 +9,8 @@ export function highlightAuthor(authors: string): string{
 	return authors
 }
 
-export function trimExcerpt(excerpt: string): string {
+export function trimExcerpt(excerpt?: string | null): string {
+	const safe = excerpt ?? ''
 	const excerptLength = template.excerptLength
-	return excerpt.length > excerptLength ? `${excerpt.substring(0, excerptLength)}...` : excerpt
+	return safe.length > excerptLength ? `${safe.substring(0, excerptLength)}...` : safe
 }

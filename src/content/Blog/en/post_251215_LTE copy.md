@@ -1,8 +1,12 @@
 ---
 title: "The Significance and Challenges of Long-Term Experiments"
-date: "2025-12-15"
-tags: ["SoilScience", "Agriculture", "Long-termExperiment"]
+description: "The value of long-term experiments may not lie in providing immediate answers, but in preserving a mode of observation that can still be tested by time."
 excerpt: "The value of long-term experiments may not lie in providing immediate answers, but in preserving a mode of observation that can still be tested by time."
+publishedAt: "2025-12-15"
+lang: en
+category: "Perspectives"
+tags: ["SoilScience", "Agriculture", "Long-termExperiment"]
+draft: false
 ---
 
 <figure>

@@ -95,19 +95,20 @@ const { Content } = await render(post)
 	</div>
 </Layout>
 
-<style>
+<style is:global>
+	.blog-content :where(figure),
 	.blog-content :where(img) {
-		width: 100%;
-		max-width: 100%;
-		height: auto;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
 		display: block;
+		margin-left: auto;
+		margin-right: auto;
 		object-fit: contain;
 	}
 
 	.blog-content :where(figure) {
-		margin-left: 0;
-		margin-right: 0;
-		width: 100%;
+		overflow: hidden;
 	}
 
 	@media (max-width: 640px) {

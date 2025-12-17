@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props
-const { title, publishedAt, tags } = post.data
+const { title, description, publishedAt, tags } = post.data
 const { Content } = await render(post)
 ---
 
@@ -21,6 +21,9 @@ const { Content } = await render(post)
 		<article class='prose max-w-none w-full text-left prose-headings:text-base-content prose-p:text-base-content/80'>
 			<div class='mb-8 border-b pb-8'>
 				<h1 class='text-4xl font-bold mb-4 text-base-content break-words'>{title}</h1>
+				{description && (
+					<p class='text-lg text-base-content/70 leading-relaxed mb-4'>{description}</p>
+				)}
 				<div class='flex flex-wrap items-center gap-4 text-base-content/70'>
 					<time datetime={publishedAt} class='flex items-center'>
 						<svg

@@ -11,9 +11,10 @@ export async function getStaticPaths({ paginate }) {
 	const posts = blogEntries
 		.map(post => ({
 			title: post.data.title,
+			description: post.data.description,
 			publishedAt: post.data.publishedAt,
 			badge: post.data.tags[0],
-			excerpt: trimExcerpt(post.data.excerpt),
+			excerpt: trimExcerpt(post.data.description),
 			slug: `${template.base}/blog/${post.id}`,
 			category: post.data.category,
 		}))

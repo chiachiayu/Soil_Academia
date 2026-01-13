@@ -14,6 +14,8 @@ export async function getStaticPaths() {
 const { post } = Astro.props
 const { title, description, publishedAt, tags } = post.data
 const { Content } = await render(post)
+
+const publishedDate = new Date(publishedAt)
 ---
 
 <Layout title={title}>
@@ -25,7 +27,7 @@ const { Content } = await render(post)
 					<p class='text-lg text-base-content/70 leading-relaxed mb-4'>{description}</p>
 				)}
 				<div class='flex flex-wrap items-center gap-4 text-base-content/70'>
-					<time datetime={publishedAt} class='flex items-center'>
+					<time datetime={publishedDate.toISOString()} class='flex items-center'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							class='h-4 w-4 mr-2'
@@ -41,7 +43,7 @@ const { Content } = await render(post)
 							></path>
 						</svg>
 						{
-							new Date(publishedAt).toLocaleDateString('en-US', {
+							publishedDate.toLocaleDateString('en-US', {
 								year: 'numeric',
 								month: 'long',
 								day: 'numeric',
@@ -73,7 +75,7 @@ const { Content } = await render(post)
          prose-ul:list-disc prose-ul:pl-6
          prose-ol:list-decimal prose-ol:pl-6
          prose-li:mb-2
-         prose-img:rounded-xl prose-img:my-8 prose-img:mx-auto prose-img:w-full
+         prose-img:rounded-xl prose-img:my-8 prose-img:mx-auto
          prose-figcaption:text-center blog-content'
 			>
 				<Content />
@@ -85,13 +87,15 @@ const { Content } = await render(post)
 <style is:global>
 	.blog-content :where(figure),
 	.blog-content :where(img) {
-		width: 100% !important;
-		max-width: 100% !important;
-		height: auto !important;
+		height: auto;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		object-fit: contain;
+	}
+
+	.blog-content :where(img) {
+		max-width: 100%;
 	}
 
 	.blog-content :where(figure) {

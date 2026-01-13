@@ -1,7 +1,7 @@
 ---
 title: "土壤科學的兩條道路"
 description: "拿著地圖出發，才能走到終點。"
-publishedAt: "2026-1-12"
+publishedAt: "2026-01-12"
 lang: zh
 category: "思考"
 tags: ["SoilScience", "Thoughts"]

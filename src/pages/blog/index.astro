@@ -8,19 +8,20 @@ const blogEntries = await getCollection('blog')
 const buildCategoryList = (lang: 'zh' | 'en') => {
 	const counts = new Map<string, number>()
 	blogEntries
-		.filter(post => post.data.lang === lang)
+		.filter(post => post.data.lang === lang && !post.data.draft)
 		.forEach(post => {
 			const name = post.data.category
 			counts.set(name, (counts.get(name) ?? 0) + 1)
 		})
 
-		return Array.from(counts.entries())
-			.map(([name, count]) => ({
-				name,
-				slug: name,
-				count,
-				href: `${template.base}/blog/category/${name}/1`,
-			}))
+	return Array.from(counts.entries())
+		.map(([name, count]) => ({
+			name,
+			slug: name,
+			count,
+			href: `${template.base}/blog/category/${encodeURIComponent(name)}/1`,
+		}))
+		.filter(cat => cat.count > 0)
 		.sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
 }
 

@@ -8,8 +8,8 @@ tags: ["SoilScience", "Thoughts", "Pedology"]
 draft: false
 ---
 
-<figure>
-  <img src="/images/blog/1.png" alt="" class="h-[28rem] rounded-lg" />
+<figure class="text-center">
+  <img src="/images/blog/1.png" alt="" class="w-96 rounded-lg" />
   <figcaption>
   「土壤學家的畫筆」──鏟子，以及其作品所留下的留影。對經常進行土壤調查的土壤學家而言，鏟子不只是工具，也是熟悉的夥伴。
   </figcaption>

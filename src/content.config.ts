@@ -28,12 +28,14 @@ const blog = defineCollection({
       "方法",
       "記錄",
       "札記",
+      "讀書心得",
       // English
       "Research Notes",
       "Methods & Models",
       "Field Observations",
       "Data & Figures",
       "Perspectives",
+      "Book remarks"
     ]),
 
     // Optional

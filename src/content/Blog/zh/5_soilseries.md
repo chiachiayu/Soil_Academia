@@ -119,7 +119,7 @@ European Food Safety Authority（EFSA）與 United States Environmental Protecti
 
 在這裡，我們先把風險評估的地圖攤開。
 
-致癌與非致癌風險、暴露途徑，以及毒理機制，並非被刻意避開，而是沿著這張地圖往下走時，才會逐一遇到的關卡，有帶未來一一破解。
+致癌與非致癌風險、暴露途徑，以及毒理機制，並非被刻意避開，而是沿著這張地圖往下走時，才會遇到的關卡，待未來一一破解。
 
 <figure>
   <img src="/images/blog/zh_5/3.png" alt="" class="mx-auto max-w-xl rounded-lg" />

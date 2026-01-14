@@ -4,7 +4,7 @@ const key = 'site-visits'
 const endpoint = `https://api.countapi.xyz/hit/${namespace}/${key}`
 ---
 
-<div class='fixed bottom-4 right-4 z-[60] pointer-events-none'>
+<div id='visit-counter' class='fixed bottom-4 right-4 z-[60] pointer-events-none'>
 	<div class='pointer-events-auto inline-flex items-center gap-2 rounded-full bg-base-200/90 border border-base-300 shadow-lg px-4 py-2 text-sm text-base-content'>
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -32,11 +32,13 @@ const endpoint = `https://api.countapi.xyz/hit/${namespace}/${key}`
 </div>
 
 <script>
-	const counterEl = document.currentScript?.previousElementSibling
-	const countTarget = counterEl?.querySelector('[data-count]')
+	const initCounter = () => {
+		const counterEl = document.getElementById('visit-counter')
+		const countTarget = counterEl?.querySelector('[data-count]')
 
-	if (countTarget) {
-		fetch(endpoint, { cache: 'no-store' })
+		if (!countTarget) return
+
+		fetch(endpoint, { cache: 'no-store', mode: 'cors' })
 			.then(res => res.json())
 			.then(data => {
 				const val = data?.value
@@ -45,5 +47,11 @@ const endpoint = `https://api.countapi.xyz/hit/${namespace}/${key}`
 			.catch(() => {
 				countTarget.textContent = '--'
 			})
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initCounter, { once: true })
+	} else {
+		initCounter()
 	}
 </script>

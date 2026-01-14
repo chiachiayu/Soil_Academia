@@ -32,27 +32,4 @@ const endpoint = `https://api.countapi.xyz/hit/${namespace}/${key}`
 	</div>
 </div>
 
-<script>
-	const initCounter = () => {
-		const counterEl = document.getElementById('visit-counter')
-		const countTarget = counterEl?.querySelector('[data-count]')
-
-		if (!countTarget) return
-
-		fetch(endpoint, { cache: 'no-store', mode: 'cors' })
-			.then(res => res.json())
-			.then(data => {
-				const val = data?.value
-				countTarget.textContent = typeof val === 'number' ? val.toLocaleString() : '--'
-			})
-			.catch(() => {
-				countTarget.textContent = '--'
-			})
-	}
-
-	if (document.readyState === 'loading') {
-		document.addEventListener('DOMContentLoaded', initCounter, { once: true })
-	} else {
-		initCounter()
-	}
-</script>
+<script src='/visit-counter.js' defer data-endpoint={endpoint}></script>

@@ -1,0 +1,49 @@
+---
+const namespace = 'soil-academia'
+const key = 'site-visits'
+const endpoint = `https://api.countapi.xyz/hit/${namespace}/${key}`
+---
+
+<div class='fixed bottom-4 right-4 z-[60] pointer-events-none'>
+	<div class='pointer-events-auto inline-flex items-center gap-2 rounded-full bg-base-200/90 border border-base-300 shadow-lg px-4 py-2 text-sm text-base-content'>
+		<svg
+			xmlns='http://www.w3.org/2000/svg'
+			fill='none'
+			viewBox='0 0 24 24'
+			stroke-width='1.5'
+			stroke='currentColor'
+			class='w-4 h-4'
+			aria-hidden='true'
+		>
+			<path
+				stroke-linecap='round'
+				stroke-linejoin='round'
+				d='M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z'
+			/>
+			<path
+				stroke-linecap='round'
+				stroke-linejoin='round'
+				d='M15 12a3 3 0 11-6 0 3 3 0 016 0z'
+			/>
+		</svg>
+		<span class='text-xs text-base-content/70'>總訪問</span>
+		<span data-count class='font-semibold tabular-nums'>—</span>
+	</div>
+</div>
+
+<script>
+	const counterEl = document.currentScript?.previousElementSibling
+	const countTarget = counterEl?.querySelector('[data-count]')
+
+	if (countTarget) {
+		fetch(endpoint, { cache: 'no-store' })
+			.then(res => res.json())
+			.then(data => {
+				const val = data?.value
+				countTarget.textContent = typeof val === 'number' ? val.toLocaleString() : '--'
+			})
+			.catch(() => {
+				countTarget.textContent = '--'
+			})
+	}
+</script>

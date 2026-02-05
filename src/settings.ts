@@ -35,8 +35,18 @@ export const template = {
     base: '' // Repository name starting with /
 }
 
+export const homepage = {
+	featuredVideo: {
+		title: 'Recent Research Highlight',
+		description:
+			'See how we conducted our enhanced rock weathering study in the paddy field last summer.',
+		// Replace with your own YouTube embed URL or other video provider embed link
+		embedUrl: 'https://www.youtube.com/embed/zp-G67_kckI?si=Dmgy8w_OC9zmLWLt',
+	},
+}
+
 export const seo = {
-	default_title: 'Chia-Yu Yang - Academic Portfolio',
+	default_title: 'Chia-Yu Yang - Soil Science',
 	default_description: 'Chia-Yu Yang\'s academic portfolio showcasing research in soil science and environmental geochemistry.',
 	default_image: '/images/webicon.png',
 }

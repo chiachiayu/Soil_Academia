@@ -5,6 +5,25 @@ import { getCollection } from 'astro:content'
 
 const blogEntries = await getCollection('blog')
 
+const categoryTaglines: Record<'zh' | 'en', Record<string, string>> = {
+	zh: {
+		田野: '田野觀察與第一手紀錄',
+		思考: '長線思辨與概念梳理',
+		方法: '研究設計與工具操作',
+		記錄: '日常筆記與幕後花絮',
+		札記: '在科學知識與長期結果之間，留下不該被快速總結的痕跡',
+		讀書心得: '閱讀後的重點摘錄與反思',
+	},
+	en: {
+		'Research Notes': 'Work-in-progress findings and data sanity checks',
+		'Methods & Models': 'Study design, code snippets, and reproducible recipes',
+		'Field Observations': 'On-site notes and contextual details',
+		'Data & Figures': 'Charts, datasets, and exploratory visuals',
+		Perspectives: 'Opinion pieces and broader takes',
+		'Book remarks': 'Highlights and reflections from readings',
+	},
+}
+
 const buildCategoryList = (lang: 'zh' | 'en') => {
 	const counts = new Map<string, number>()
 	blogEntries
@@ -54,16 +73,18 @@ const enCategories = buildCategoryList('en')
 									class='card bg-base-200 border border-base-300 hover:border-accent transition-colors'
 								>
 									<div class='card-body'>
-										<div class='flex items-center justify-between'>
-											<h2 class='card-title text-base-content'>{cat.name}</h2>
-											<span class='badge badge-accent badge-outline'>{cat.count}</span>
-										</div>
-										<p class='text-sm text-base-content/70'>中文文章</p>
-									</div>
-								</a>
-							))
-						) : (
-							<p class='text-base-content/60'>目前尚無中文分類。</p>
+							<div class='flex items-center justify-between'>
+								<h2 class='card-title text-base-content'>{cat.name}</h2>
+								<span class='badge badge-accent badge-outline'>{cat.count}</span>
+							</div>
+							<p class='text-sm text-base-content/70'>
+								{categoryTaglines.zh[cat.name] ?? '中文文章'}
+							</p>
+						</div>
+					</a>
+				))
+			) : (
+				<p class='text-base-content/60'>目前尚無中文分類。</p>
 						)
 					}
 				</div>
@@ -83,16 +104,18 @@ const enCategories = buildCategoryList('en')
 									class='card bg-base-200 border border-base-300 hover:border-accent transition-colors'
 								>
 									<div class='card-body'>
-										<div class='flex items-center justify-between'>
-											<h2 class='card-title text-base-content'>{cat.name}</h2>
-											<span class='badge badge-accent badge-outline'>{cat.count}</span>
-										</div>
-										<p class='text-sm text-base-content/70'>English posts</p>
-									</div>
-								</a>
-							))
-						) : (
-							<p class='text-base-content/60'>No English categories yet.</p>
+							<div class='flex items-center justify-between'>
+								<h2 class='card-title text-base-content'>{cat.name}</h2>
+								<span class='badge badge-accent badge-outline'>{cat.count}</span>
+							</div>
+							<p class='text-sm text-base-content/70'>
+								{categoryTaglines.en[cat.name] ?? 'English posts'}
+							</p>
+						</div>
+					</a>
+				))
+			) : (
+				<p class='text-base-content/60'>No English categories yet.</p>
 						)
 					}
 				</div>

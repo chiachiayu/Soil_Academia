@@ -49,9 +49,19 @@ const { title, description, image } = Astro.props
 <script is:inline>
   const LIGHT = {JSON.stringify(template.lightTheme)};
   const DARK = {JSON.stringify(template.darkTheme)};
-  const key = 'theme';
-  const stored = localStorage.getItem(key);
-  const initial = stored === DARK ? DARK : LIGHT;
+  const KEY = 'theme';
+
+  const normalize = (value) => {
+    if (value === DARK) return DARK;
+    return LIGHT;
+  };
+
+  const initial = normalize(localStorage.getItem(KEY));
   document.documentElement.setAttribute('data-theme', initial);
-  localStorage.setItem(key, initial);
+  localStorage.setItem(KEY, initial);
+</script>
+<script>
+  import { themeChange } from 'theme-change'
+  themeChange()
+  document.addEventListener('astro:after-swap', () => themeChange(false));
 </script>

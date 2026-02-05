@@ -5,7 +5,8 @@ import {template} from  '../../settings.ts'
 <label class="grid cursor-pointer place-items-center" transition:persist>
   <input
     type="checkbox"
-    class="toggle bg-base-content col-span-2 col-start-1 row-start-1 theme-toggle"
+    class="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
+    data-toggle-theme={`${template.lightTheme},${template.darkTheme}`}
 />
   <svg
     class="stroke-base-100 fill-base-100 col-start-1 row-start-1"
@@ -36,35 +37,3 @@ import {template} from  '../../settings.ts'
     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
   </svg>
 </label>
-
-<script is:inline>
-  const LIGHT = {JSON.stringify(template.lightTheme)};
-  const DARK = {JSON.stringify(template.darkTheme)};
-  const key = 'theme';
-
-  const apply = (theme) => {
-    localStorage.setItem(key, theme);
-    document.documentElement.setAttribute('data-theme', theme);
-  };
-
-  const sync = () => {
-    const toggles = Array.from(document.querySelectorAll('.theme-toggle')).filter(
-      el => el instanceof HTMLInputElement
-    );
-    const current = localStorage.getItem(key) || document.documentElement.getAttribute('data-theme') || LIGHT;
-    const isDark = current === DARK;
-    toggles.forEach(t => (t.checked = isDark));
-    toggles.forEach(t => {
-      if (!t.dataset.bound) {
-        t.addEventListener('change', (e) => {
-          const next = (e.target instanceof HTMLInputElement && e.target.checked) ? DARK : LIGHT;
-          apply(next);
-        });
-        t.dataset.bound = 'true';
-      }
-    });
-  };
-
-  document.addEventListener('DOMContentLoaded', sync);
-  document.addEventListener('astro:after-swap', sync);
-</script>

@@ -71,7 +71,7 @@ export const awards = [
 	},
 	{
 		title: 'NTU Xin-Miao Key Technology PhD Scholarship Program',
-		description: 'Competitive doctoral fellowship supporting research in strategic and emerging technologies. (2022-2024)',
+		description: 'Competitive doctoral fellowship supporting research in strategic and emerging technologies. (2021-2024)',
 	},
 	{
 		title: 'Kuo Hsi-Liu Cultural and Educational Foundation Scholarship',

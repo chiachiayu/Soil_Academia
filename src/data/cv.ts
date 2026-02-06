@@ -64,6 +64,30 @@ export const skills = [
 	// },
 ];
 
+export const awards = [
+	{
+		title: 'Academic Thesis Award for PhD Students, College of Bioresources and Agriculture, National Taiwan University (NTU)',
+		description: 'Awarded for an outstanding peer-reviewed research paper conducted during PhD studies. (2025)',
+	},
+	{
+		title: 'NTU Xin-Miao Key Technology PhD Scholarship Program',
+		description: 'Competitive doctoral fellowship supporting research in strategic and emerging technologies. (2022-2024)',
+	},
+	{
+		title: 'Kuo Hsi-Liu Cultural and Educational Foundation Scholarship',
+		description: 'Merit-based scholarship supporting academic excellence and research potential. (2024)',
+	},
+	{
+		title: 'Second Prize, Poster Presentation Award, Annual Meeting of the Soil and Fertilizer Society',
+		description: 'Recognized for clear scientific communication and research quality in a competitive poster session. (2022)',
+	},
+	{
+		title: 'Travel Support, 22nd World Congress of Soil Science, International Union of Soil Science (IUSS)',
+		description: 'Granted to support international conference participation and academic exchange. (2022)',
+	},
+	
+];
+
 export const publications = [
 	{
 		title: 'Genesis and mass balance of basaltic soils along a lava plateau chronosequence in Penghu Islands, Taiwan',

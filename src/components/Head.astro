@@ -47,21 +47,22 @@ const { title, description, image } = Astro.props
 
 <!-- Theme bootstrap: set data-theme before paint -->
 <script is:inline>
+  // Set initial theme before paint to avoid flash
   const LIGHT = {JSON.stringify(template.lightTheme)};
   const DARK = {JSON.stringify(template.darkTheme)};
   const KEY = 'theme';
 
-  const normalize = (value) => {
-    if (value === DARK) return DARK;
-    return LIGHT;
-  };
+  const normalize = (value) => (value === DARK ? DARK : LIGHT);
+  const stored = typeof localStorage !== 'undefined' ? localStorage.getItem(KEY) : null;
+  const initial = normalize(stored);
 
-  const initial = normalize(localStorage.getItem(KEY));
   document.documentElement.setAttribute('data-theme', initial);
-  localStorage.setItem(KEY, initial);
+  if (stored !== initial && typeof localStorage !== 'undefined') {
+    localStorage.setItem(KEY, initial);
+  }
 </script>
-<script>
-  import { themeChange } from 'theme-change'
-  themeChange()
+<script type="module">
+  import themeChange from 'theme-change';
+  themeChange();
   document.addEventListener('astro:after-swap', () => themeChange(false));
 </script>

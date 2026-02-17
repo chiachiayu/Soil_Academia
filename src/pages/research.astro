@@ -1,11 +1,12 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { profile } from "@/settings";
+import { profile, researchPage } from "@/settings";
 import BetterIcon from "@/components/ui/BetterIcon.astro";
 import List from "@/components/ui/List.astro";
 import {RESEARCH_ICONS} from "@/data/researchIcons";
 
 const { research_areas } = profile;
+const { highlight } = researchPage;
 ---
 
 <Layout title="Research | Dr. Chia-Yu Yang" description="Research statement and areas of interest for Dr. Chia-Yu Yang, focusing on soil genesis, environmental geochemistry, and climate science.">
@@ -21,6 +22,27 @@ const { research_areas } = profile;
          Chia-Yu Yang studies how soils evolve through the interplay of climate, parent material, and time — integrating geochemistry, mineral magnetism and mineralogy to reveal how landscapes archive the Earth’s environmental and geochemical history, from ultramafic terrains to global ecosystems.
       </p>
     </div>
+
+    <!-- Project Highlight -->
+    <section class="mb-12 grid gap-8 lg:grid-cols-12 items-start">
+      <div class="space-y-4 lg:col-span-5">
+        <p class="text-sm font-semibold uppercase tracking-[0.08em] text-accent">Project Highlight</p>
+        <h2 class="text-2xl font-bold text-base-content">{highlight.title}</h2>
+        <p class="text-base text-base-content/80 leading-relaxed">{highlight.description}</p>
+      </div>
+      <div class="lg:col-span-7 w-full rounded-2xl overflow-hidden shadow-xl border border-base-300 bg-base-200">
+        <div class="aspect-video bg-base-100">
+          <video
+            controls
+            poster={highlight.poster}
+            class="w-full h-full object-cover"
+          >
+            <source src={highlight.videoSrc} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
 
     <h2 class="text-2xl font-bold mb-6">Research Areas</h2>
     <div class="grid gap-8 mb-12">

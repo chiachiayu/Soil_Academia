@@ -37,11 +37,24 @@ export const template = {
 
 export const homepage = {
 	featuredVideo: {
-		title: 'Recent Research Highlight',
+		title: 'Newest Research activity',
 		description:
-			'See how we conducted our enhanced rock weathering study in the paddy field last summer.',
-		// Replace with your own YouTube embed URL or other video provider embed link
-		embedUrl: 'https://www.youtube.com/embed/zp-G67_kckI?si=Dmgy8w_OC9zmLWLt',
+			'Last week (2/10-2/13), we have started our enhanced rock weathering study in the paddy field in Taichung, Taiwan.',
+		videoSrc: '/videos/TARI_ERW_short.mp4', // Put the MP4 in public/videos/
+		poster: '/images/field/paddy-erw-tari.png', // Optional poster shown before playback
+		activities: [
+			'2026 Spring: Enhanced rock weathering field trial in Taichung, Taiwan.',
+			'International collaboration between Kyoto Prefectural University (KPU), Taiwan Agricultural Research Institute (TARI) and National Chung Hsing University (NCHU).',
+		],
+	},
+}
+
+export const researchPage = {
+	highlight: {
+		title: 'Current Project Highlight',
+		description: 'Demonstration of enhanced rock weathering field trials and academic activity log.',
+		videoSrc: '/videos/Yosanocho-2025-summer_sb.mp4',
+		poster: '/images/field/paddy-erw-yosano.png',
 	},
 }
 

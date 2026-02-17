@@ -45,24 +45,40 @@ const { title, description, image } = Astro.props
 <meta property='twitter:description' content={description} />
 <meta property='twitter:image' content={new URL(image, Astro.url)} />
 
-<!-- Theme bootstrap: set data-theme before paint -->
+<!-- Theme bootstrap: set data-theme before paint & wire toggles -->
 <script is:inline>
-  // Set initial theme before paint to avoid flash
   const LIGHT = {JSON.stringify(template.lightTheme)};
   const DARK = {JSON.stringify(template.darkTheme)};
   const KEY = 'theme';
 
-  const normalize = (value) => (value === DARK ? DARK : LIGHT);
-  const stored = typeof localStorage !== 'undefined' ? localStorage.getItem(KEY) : null;
-  const initial = normalize(stored);
+  const setTheme = (value) => {
+    document.documentElement.setAttribute('data-theme', value);
+    try { localStorage.setItem(KEY, value); } catch (_) {}
+  };
 
-  document.documentElement.setAttribute('data-theme', initial);
-  if (stored !== initial && typeof localStorage !== 'undefined') {
-    localStorage.setItem(KEY, initial);
-  }
-</script>
-<script type="module">
-  import themeChange from 'theme-change';
-  themeChange();
-  document.addEventListener('astro:after-swap', () => themeChange(false));
+  const stored = (() => {
+    try { return localStorage.getItem(KEY); } catch (_) { return null; }
+  })();
+
+  const initial = stored === DARK ? DARK : LIGHT;
+  setTheme(initial);
+
+  const applyToggleState = () => {
+    document.querySelectorAll('[data-theme-toggle]').forEach((el) => {
+      if (el instanceof HTMLInputElement) {
+        el.checked = localStorage.getItem(KEY) === DARK;
+      }
+    });
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    applyToggleState();
+    document.querySelectorAll('[data-theme-toggle]').forEach((el) => {
+      el.addEventListener('change', (ev) => {
+        const isDark = (ev.target instanceof HTMLInputElement) && ev.target.checked;
+        setTheme(isDark ? DARK : LIGHT);
+        applyToggleState();
+      });
+    });
+  });
 </script>

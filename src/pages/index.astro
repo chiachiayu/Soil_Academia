@@ -47,6 +47,11 @@ const { featuredVideo } = homepage
 				<div class='aspect-video bg-base-100'>
 					<video
 						controls
+						autoplay
+						muted
+						loop
+						playsinline
+						preload='metadata'
 						poster={featuredVideo.poster}
 						class='w-full h-full object-cover'
 					>

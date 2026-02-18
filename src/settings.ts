@@ -40,7 +40,7 @@ export const homepage = {
 		title: 'Newest Research activity',
 		description:
 			'Last week (2/10-2/13), we have started our enhanced rock weathering study in the paddy field in Taichung, Taiwan.',
-		videoSrc: '/videos/TARI_ERW_short.mp4', // Put the MP4 in public/videos/
+		videoSrc: '/videos/TARI_ERW_short_low.mp4', // Put the MP4 in public/videos/
 		poster: '/images/field/paddy-erw-tari.png', // Optional poster shown before playback
 		activities: [
 			'2026 Spring: Enhanced rock weathering field trial in Taichung, Taiwan.',
@@ -53,7 +53,7 @@ export const researchPage = {
 	highlight: {
 		title: 'Current Project Highlight',
 		description: 'Demonstration of enhanced rock weathering field trials and academic activity log.',
-		videoSrc: '/videos/Yosanocho-2025-summer_sb.mp4',
+		videoSrc: '/videos/Yosanocho-2025-summer-low.mp4',
 		poster: '/images/field/paddy-erw-yosano.png',
 	},
 }

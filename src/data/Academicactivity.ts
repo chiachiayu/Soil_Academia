@@ -122,5 +122,21 @@ export const activity = [
       subimages: ['/images/shimane2025/2.png', '/images/shimane2025/3.png', '/images/shimane2025/4.png'
       ],  // 可選，若要附上細節圖
     },
-  }
+  },
+  {
+    location: 'Tottori, Japan',
+    time: '2026/2/26 - 2026/2/27',
+    name: 'MISASA IX Conference',
+    description: 'MISASA IX Conference on Martian Sciences hosted by Okayama University',
+    image: '/images/misasa2026/misasa2026_1.png',  // ✅ 圖片路徑
+    detail: {
+      subtitle: 'More about the activity',
+       text: `
+        In February 2026, Chia-Yu Yang attended the MISASA IX Conference on Martian Sciences hosted by Okayama University in Tottori, Japan.
+       She presented "Climate Control on Cr and Ni Bioavailability in Ultramafic Soils along an Elevation Gradient in Mt. Kinabalu, Malaysia" in the conference.
+       `,
+      subimages: ['/images/misasa2026/misasa2026_2.png', '/images/misasa2026/misasa2026_3.png', '/images/misasa2026/misasa2026_4.png'
+      ],  // 可選，若要附上細節圖
+    },
+  },
 ];

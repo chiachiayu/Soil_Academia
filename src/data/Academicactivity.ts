@@ -120,7 +120,7 @@ export const activity = [
         She presented "Exploring Basalt Weathering for Mitigating Greenhouse Gas Emissions in Rice Paddy System" in the conference.
        `,
       subimages: ['/images/shimane2025/2.png', '/images/shimane2025/3.png', '/images/shimane2025/4.png'
-      ],  // 可選，若要附上細節圖
+      ], 
     },
   },
   {
@@ -136,7 +136,7 @@ export const activity = [
        She presented "Climate Control on Cr and Ni Bioavailability in Ultramafic Soils along an Elevation Gradient in Mt. Kinabalu, Malaysia" in the conference.
        `,
       subimages: ['/images/misasa2026/misasa2026_2.png', '/images/misasa2026/misasa2026_3.png', '/images/misasa2026/misasa2026_4.png'
-      ],  // 可選，若要附上細節圖
+      ], 
     },
   },
 ];

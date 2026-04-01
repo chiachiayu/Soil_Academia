@@ -91,7 +91,7 @@ export const awards = [
 export const publications = [
 		{
 		title: 'Linking magnetic susceptibility with chromium and nickel pedogeochemistry in ultramafic soils: A nexus perspective',
-		authors: 'Yang,C.Y., Z.Y. Hseu, A. Nakao',
+		authors: 'Yang,C.Y., A. Nakao, Z.Y. Hseu',
 		journal: 'Catena',
 		time: '2026',
 		link: 'https://doi.org/10.1016/j.catena.2026.109992',

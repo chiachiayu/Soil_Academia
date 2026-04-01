@@ -89,7 +89,15 @@ export const awards = [
 ];
 
 export const publications = [
-	{
+		{
+		title: 'Linking magnetic susceptibility with chromium and nickel pedogeochemistry in ultramafic soils: A nexus perspective',
+		authors: 'Yang,C.Y., Z.Y. Hseu, A. Nakao',
+		journal: 'Catena',
+		time: '2026',
+		link: 'https://doi.org/10.1016/j.catena.2026.109992',
+		abstract: 'Soil magnetic susceptibility (κ) provides a sensitive record of soil evolution because it often increases as non-magnetic Fe-bearing silicates transform into fine-grained ferrimagnetic oxides during pedogenesis. However, this pattern does not always apply to ultramafic soils, where abundant inherited spinel-group minerals such as magnetite and chromite markedly elevate κ independent of pedogenic formation. Since both spinels and pedogenic Fe oxides are one of the hosts for chromium (Cr) and nickel (Ni), variations in κ may also reflect the redistribution of these elements during weathering—a linkage that remains poorly constrained. To explore this relationship, eight pedons representing Entisols, Inceptisols, Alfisols, and Ultisols were examined as representative soil profiles from ophiolite complexes in eastern Taiwan. The soil κ was determined for individual soil horizons, alongside selective Fe extractions and geochemical analyses. Across the profiles, κ ranged from 1.54 to 30.3 × 10−3 SI, showing irregular depth trends driven by the preservation of inherited spinels and attenuation through pedogenic alteration and carbonate dilution. The κ was predominantly governed by inherited ferrimagnets since only structural Fe but not pedogenic Fe oxides displayed a significant positive correlation with κ. Significant and positive correlations between κ, Cr, and Ni revealed that κ can serve as a proxy for Crsingle bondNi abundance and redistribution within ultramafic profiles. Multivariate analyses further indicated secondary influences from soil texture and carbonate content. Collectively, these findings highlighted a mechanistic linkage between magnetic and geochemical properties in Cr/Ni-rich soils and emphasized the need for broader climatic comparisons to generalize this relationship.',
+	},
+		{
 		title: 'Genesis and mass balance of basaltic soils along a lava plateau chronosequence in Penghu Islands, Taiwan',
 		authors: 'Yang,C.Y., C.Y. Huang,  Z.Y. Hseu',
 		journal: 'Soil Science and Plant Nutrition',

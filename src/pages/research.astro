@@ -12,101 +12,97 @@ const { highlight } = researchPage;
 <Layout title="Research | Dr. Chia-Yu Yang" description="Research statement and areas of interest for Dr. Chia-Yu Yang, focusing on soil genesis, environmental geochemistry, and climate science.">
     <div class='mx-auto w-full max-w-3xl px-6 lg:max-w-4xl lg:px-0'></div>
     <h1 class="text-3xl font-bold mb-8">Research Statement</h1>
-
-    <div class="mb-12">
-      <p class="text-lg mb-6 text-justify">
-        Chia-Yu Yang's research bridges soil genesis and geochemistry to reveal how mineral weathering and pedogenic transformation shape the morphology, mineralogy, elemental distribution and soil fertility.
-        Focusing on ultramafic and basaltic systems, she integrates magnetic, mineralogical, and geochemical approaches to decode how soils evolve and interact with the atmosphere. 
-        Ultimately, she seeks to deepen our understanding of soils as dynamic ecosystems that influence and respond to global environmental change.      </p>
-      <p class="text-lg mb-6 text-justify">
-         Chia-Yu Yang studies how soils evolve through the interplay of climate, parent material, and time — integrating geochemistry, mineral magnetism and mineralogy to reveal how landscapes archive the Earth’s environmental and geochemical history, from ultramafic terrains to global ecosystems.
-      </p>
+<div class="mb-12">
+  <p class="text-lg mb-6 text-justify">
+    I study soils as dynamic systems linking minerals, ecosystems, and climate. 
+    My research focuses on how mineral weathering and pedogenic processes control elemental cycling, soil fertility, and environmental responses across agricultural and natural systems.
+  </p>
+  <p class="text-lg mb-6 text-justify">
+    Integrating mineralogy (XRPD), geochemistry, and field-based observations, I aim to provide direct evidence of soil processes and connect mineral-scale transformations to global environmental change, including enhanced rock weathering (ERW) as a climate mitigation strategy.
+  </p>
+</div>
     </div>
 
-    <!-- Project Highlight -->
-    <section class="mb-12 grid gap-8 lg:grid-cols-12 items-start">
-      <div class="space-y-4 lg:col-span-5">
-        <p class="text-sm font-semibold uppercase tracking-[0.08em] text-accent">Project Highlight</p>
-        <h2 class="text-2xl font-bold text-base-content">{highlight.title}</h2>
-        <p class="text-base text-base-content/80 leading-relaxed">{highlight.description}</p>
-      </div>
-      <div class="lg:col-span-7 w-full rounded-2xl overflow-hidden shadow-xl border border-base-300 bg-base-200">
-        <div class="aspect-video bg-base-100">
-          <video
-            controls
-            poster={highlight.poster}
-            class="w-full h-full object-cover"
-          >
-            <source src={highlight.videoSrc} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </section>
+   <!-- Highlight + Field Site 合併 -->
+<section class="mb-16 grid gap-8 lg:grid-cols-12 items-start">
+  <div class="space-y-4 lg:col-span-5">
+    <p class="text-sm font-semibold uppercase tracking-[0.08em] text-accent">Featured Research</p>
+    <h2 class="text-2xl font-bold text-base-content">{highlight.title}</h2>
+    <p class="text-base text-base-content/80 leading-relaxed">
+      Field-based investigation of enhanced rock weathering (ERW) in paddy soils, focusing on mineral transformation, soil chemical dynamics, and greenhouse gas responses under real agricultural conditions.
+    </p>
 
-    <h2 class="text-2xl font-bold mb-6">Research Areas</h2>
-    <div class="grid gap-8 mb-12">
-      {
-        research_areas.map((area) => (
-          <div class="flex gap-6 items-start">
-            <BetterIcon>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke-width="2"
-                class="size-6 stroke-accent"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d={RESEARCH_ICONS[area.field as keyof typeof RESEARCH_ICONS]?.path || RESEARCH_ICONS['soil chemistry'].path}
-                />
-              </svg>
-            </BetterIcon>
-            <div>
-              <h3 class="text-xl font-semibold mb-2">{area.title}</h3>
-              <p class="text-base text-justify">{area.description}</p>
-            </div>
-          </div>
-        ))
-      }
+    <p class="text-base text-base-content/70 leading-relaxed">
+      Field site: Yosano Town, Kyoto — replicated basalt-amended and control plots used to quantify weathering processes and biogeochemical responses.
+    </p>
+  </div>
+
+  <div class="lg:col-span-7 space-y-4">
+    <div class="w-full rounded-2xl overflow-hidden shadow-xl border border-base-300 bg-base-200">
+      <div class="aspect-video bg-base-100">
+        <video
+          controls
+          poster={highlight.poster}
+          class="w-full h-full object-cover"
+        >
+          <source src={highlight.videoSrc} type="video/mp4" />
+        </video>
+      </div>
     </div>
 
-    <List listTitle="Current Projects" listItems={[
-      {
-        title: "Enhanced Rock Weathering in Paddy Soils",
-        description: "Investigation of enhanced weathering processes in temperate and tropical paddy soils and their role in mitigating climate change and agricultural productivity."
-      },
-    ]} />
-<!-- Current Project Field Photo Section -->
-<div class="mt-10 mb-16">
-  <h3 class="text-xl font-semibold mb-4">Field Site – Yosano Town, Kyoto</h3>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     <img 
       src="/images/field/paddy-erw-site.png" 
       alt="Paddy field ERW experimental plots" 
       class="rounded-lg shadow-md"
     />
-
-    <p class="text-base leading-relaxed text-justify">
-      The field site is located in the Yosano town, Kyoto (Japan), 
-      serving as the primary location for our ERW paddy field experiments.
-      It consists of replicated basalt-amended and control plots,
-      allowing us to track short-term biogeochemical responses and evaluate
-      how enhanced weathering influenced the greenhouse gas fluxes under field conditions.
-    </p>
   </div>
+</section>
+
+<!-- Selected Projects（簡化） -->
+<List listTitle="Current Works" listItems={[
+  {
+    title: "Enhanced Rock Weathering",
+    description: "Field validation of mineral weathering and its role in climate mitigation and soil processes."
+  },
+  {
+    title: "Ultramafic Soil Systems",
+    description: "Pedogenesis and metal (Cr, Ni) redistribution across climatic gradients."
+  },
+  {
+    title: "Soil–Environment Interface",
+    description: "Linking mineralogy and geochemistry to environmental risk and agricultural systems."
+  }
+]} />
+
+<!-- Research Themes（取代 Areas + Impact） -->
+<h2 class="text-2xl font-bold mb-6">Research Themes</h2>
+
+<div class="grid gap-8 mb-12">
+  {
+    research_areas.map((area) => (
+      <div class="flex gap-6 items-start">
+        <BetterIcon>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke-width="2"
+            class="size-6 stroke-accent"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d={RESEARCH_ICONS[area.field as keyof typeof RESEARCH_ICONS]?.path || RESEARCH_ICONS['soil chemistry'].path}
+            />
+          </svg>
+        </BetterIcon>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">{area.title}</h3>
+          <p class="text-base text-justify">{area.description}</p>
+        </div>
+      </div>
+    ))
+  }
 </div>
-
-    <h2 class="text-2xl font-bold mb-6">Research Impact</h2>
-    <p class="text-lg mb-6 text-justify">
-       Chia-Yu Yang's research focuses on the linkage bewtween geochemistry and pedology across ultramafic and serpentine landscapes.
-       By integrating elemental mapping, fractionation and chemical speciation analyses, magnetic analyses, and mineralogical analyses,
-       she uncovers how parent material, climate, time, and landscape interact to shape soil mineralogy and element behavior (e.g., Cr, Ni, and rare earth elements). 
-       This comprehensive approach not only deepens our understanding of how soils evolve in dynamic geological systems, 
-       but also provides a theory-based framework for evaluating nutrient cycling, potentially-toxic element mobility, and long-term ecosystem development. 
-     </p>
-  </div>
 </Layout>

@@ -51,7 +51,7 @@ export const homepage = {
 
 export const researchPage = {
 	highlight: {
-		title: 'Current Project Highlight',
+		title: 'Enhanced Rock Weathering in Paddy Soils',
 		description: 'Demonstration of enhanced rock weathering field trials and academic activity log.',
 		videoSrc: '/videos/Yosanocho-2025-summer-low.mp4',
 		poster: '/images/field/paddy-erw-yosano.png',

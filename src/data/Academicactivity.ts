@@ -139,4 +139,36 @@ export const activity = [
       ], 
     },
   },
+    {
+    location: 'Vienna, Austria',
+    time: '2026/5/5 - 2026/5/9',
+    name: 'EGU2026',
+    description: 'European Geosciences Union General Assembly 2026',
+    image: '/images/EGU26/2.png',  // ✅ 圖片路徑
+    detail: {
+      subtitle: 'More about the activity',
+       text: `
+        In May 2026, Chia-Yu Yang attended the European Geosciences Union General Assembly 2026 in Vienna, Austria.
+       She presented "Enhanced Rock Weathering–Induced Carbon Dioxide Removal in Flooded Rice Paddies: Mineral-Based Monitoring from Field Experiments in Japan" in the conference.
+       `,
+      subimages: ['/images/EGU26/4.png', '/images/EGU26/6.png'
+      ], 
+    },
+  },
+    {
+    location: 'Nanjing, China',
+    time: '2026/6/7 - 2026/6/12',
+    name: 'WCSS23',
+    description: 'World Congress of Soil Science, WCSS23',
+    image: '/images/wcss23/3.png',  // ✅ 圖片路徑
+    detail: {
+      subtitle: 'More about the activity',
+       text: `
+        In June 2026, Chia-Yu Yang attended the World Congress of Soil Science, WCSS23 in Nanjing, China.
+       She presented "Exploring Basalt Weathering for Mitigating Greenhouse Gas Emissions in Rice Paddy System" in the conference.
+       `,
+      subimages: ['/images/wcss23/4.png', '/images/wcss23/5.png', '/images/wcss23/8.png'
+      ], 
+    },
+  },
 ];

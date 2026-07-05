@@ -126,4 +126,4 @@ draft: false
 
 ---
 
-> **Soils contaminated by radioactive materials are still precious resources that we all need to find their own way to let them fit back to nature.**
+> **被放射性物質污染的土壤依然是珍貴的資源，我們需要找到讓它們重返自然的方式。**

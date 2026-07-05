@@ -8,6 +8,8 @@ tags: ["SoilPollution", "Notes", "RadioactiveMaterials"]
 draft: false
 ---
 
+*本篇部分資料參考自日本環境省之福島2026ワークショプ課程內容*
+
 <figure>
   <img src="/images/blog/20260705/9.png" alt="" class="mx-auto max-w-xl rounded-lg" />
   <figcaption>

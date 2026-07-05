@@ -1,7 +1,7 @@
 export const activity = [
   {
     location: 'Hokkaido, Japan',
-    time: '2025/06/03 - 2025/06/09',
+    time: '2024/06/03 - 2024/06/09',
     name: '7th ISCC',
     description: '7th International Soil Classification Congress',
     image: '/images/7thISCC/ISCC_group photo_2.JPG',  // ✅ 圖片路徑
